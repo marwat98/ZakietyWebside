@@ -18,6 +18,12 @@
     left: 3%;
     height: 100%;
     width: 250px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.zakiety__img:hover{
+    color: #6d6d6d;
+    filter: brightness(0.5);
 }
 .sidebar__menu img{
     width: 250px;
@@ -38,17 +44,24 @@
     text-decoration: none;
 }
 .menu li a:hover{
-    color:grey;
+    color:#6d6d6d;
 }
 .social__media{
     margin-top: 5%;
     margin-left: 7%;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 .social__media img{
     margin-left: 3%;
     width: 16px;
     height: 16px;
-    color: white;
+    cursor: pointer;
+}
+.social__media img:hover{
+    color: #6d6d6d;
+    filter: brightness(0.5);
+}
+@media screen and (max-width: 960px) {
+
 }
