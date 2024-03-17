@@ -34,8 +34,9 @@ body{
 }
 .navbar a{
     display: block;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-top: 10%;
+    margin-bottom: 7%;
     color: #fff;
     text-decoration: none;
     font-weight: 800;
@@ -53,19 +54,13 @@ body{
     cursor: pointer;
     display: none;
 }
-.social__media{
-    position: fixed;
-    width: 15%;
-    margin-top: 1%;
-    margin-left: -1%;
-}
-.social__media img{
-    margin-left: 6%;
+.navbar img{
+    margin-right: 4%;
     width: 16px;
     height: 16px;
     transition: all 0.3s ease;
 }
-.social__media img:hover{
+.navbar img:hover{
     color: #6d6d6d;
     filter: brightness(0.5);
 }
@@ -75,10 +70,21 @@ body{
 }
 @media (max-width: 768px){
     .header{
-        width: 250px;
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        width: 768px;
+        cursor: pointer;
+        transition: all 0.3s ease;
     }
     .icons{
-        display: inline-block;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -17%;
+        left: calc(100vw - 90px); 
+        z-index: 100;
+        display: block;
     }
     #check:checked~.icons #menu-icon{
         display: none;
@@ -91,33 +97,38 @@ body{
     }
     .zakiety__img{
         position: fixed;
-        top: 5%;
+        top: 4%;
         left: 3%;
         width: 150px;
         transition: all 0.1s ease;
+        z-index: 100;
+    }
+    .space{
+        margin-top: 20%;
     }
     .navbar {
         position: absolute;
-        top: -5%;
-        left: -7%;
+        top: -20%;
+        left: -4%;
         width: 150%;
         height:0;
         background: #131311;
         overflow: hidden;
         transition: all 0.3s ease;
 }
-    }
     #check:checked~.navbar{
         height:100%;
     }
     .navbar a {
-        display: block;
+        display: flex;
         font-size: 1.1rem;
-        margin: 1.3rem 0;
-        text-align: center;
-        transform: translateY(-50px);
+        align-items: center;
+        justify-content: center;
+        margin-right: 65%;
+        margin-top: -4%;
         opacity: 0;
         transition: all 0.3s ease;
+    
     }
     #check:checked~.navbar a{
         transform: translateY(0);
@@ -129,12 +140,99 @@ body{
         transition-delay: calc(.15s * var(i));
         opacity: 1;
     }
+    img.left{
+        margin-top: 8%;
+        margin-left: 4%;
+    }
     .navbar img{
         width: 20px;
         height: 20px;
-        padding-top: 5%;
-        padding-left: 11%;
         transform: translateY(-50px);
         opacity: 0;
         transition: all 0.3s ease;
     }
+} 
+ /* @media (max-width: 1024px){
+    .header{
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        width: 1024px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -17%;
+        left: calc(100vw - 110px); 
+        z-index: 100;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .zakiety__img{
+        position: fixed;
+        top: 3%;
+        left: 3%;
+        width: 150px;
+        transition: all 0.1s ease;
+        z-index: 100;
+    }
+    .space{
+        margin-top: 13%;
+    }
+    .navbar {
+        position: absolute;
+        top: -25%;
+        left: -4%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:100%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1.2rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 20%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-left: 20%;
+    }
+    .navbar img{
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+}   */
