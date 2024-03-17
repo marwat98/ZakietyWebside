@@ -4,7 +4,7 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;    
 }
-.header{
+body{
     background-image: url(images/tlo1.jpg);
     height: 100vh;
     background-repeat: no-repeat;
@@ -12,10 +12,10 @@
     background-size: cover;
     background-position: center;
 }
-.navbar{
+.header{
     position: fixed;
     top: 20%;
-    left: 3%;
+    left: 5%;
     height: 100%;
     width: 250px;
     cursor: pointer;
@@ -26,73 +26,59 @@
     top: 5%;
     left: 3%;
     width: 250px;
+    transition: all 0.3s ease;
 }
 .zakiety__img:hover{
     color: #6d6d6d;
     filter: brightness(0.5);
 }
-.navbar li a {
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-.navbar li {
-    font-size: 18px;
-    list-style: none;
-    padding-left: 10%;
-    margin-top: 5%;
-}
 .navbar a{
-    margin-top: 5%;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
     text-decoration: none;
+    font-weight: 800;
+    transition: all 0.3s ease;
 }
-.navbar li a:hover{
-    color:#6d6d6d;
+.navbar a:hover{
+    color: #6d6d6d;
+}
+.icons{
+    position: absolute;
+    top: -18%;
+    width: 200px;
+    height: 200px;
+    right: -95%;
+    cursor: pointer;
+    display: none;
 }
 .social__media{
     position: fixed;
     width: 15%;
     margin-top: 1%;
-    margin-left: 1%;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin-left: -1%;
 }
 .social__media img{
-    margin-left: 3%;
+    margin-left: 6%;
     width: 16px;
     height: 16px;
-    cursor: pointer;
+    transition: all 0.3s ease;
 }
 .social__media img:hover{
     color: #6d6d6d;
     filter: brightness(0.5);
 }
 
-.icons{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    display: none;
-}
 #check{
     display: none;
 }
-/*  Mobile menu */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px){
     .header{
-        background: #131313;
-    }
-    .zakiety__img{
-        position: fixed;
-        top: 3%;
-        left: 3%;
-        width: 170px;
+        width: 250px;
     }
     .icons{
-        display: block;
-        margin-left: 80%;
-        margin-top: -25%;
+        display: inline-block;
     }
     #check:checked~.icons #menu-icon{
         display: none;
@@ -103,33 +89,52 @@
     #check:checked~.icons #close-icon{
         display: block;
     }
-    .navbar{
+    .zakiety__img{
         position: fixed;
-        top:15%;
-        left: 0;
-        width: 100%;
-        height: 17.7rem;
+        top: 5%;
+        left: 3%;
+        width: 150px;
+        transition: all 0.1s ease;
     }
-    .navbar ul li a {
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        height: 100%; 
-        width: 100%; 
-        margin-left: -5%;
+    .navbar {
+        position: absolute;
+        top: -5%;
+        left: -7%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
     }
-    .social__media{
-        position: fixed;
-        width: 50%;
-        margin-top: 5%;
-        margin-left: 24%;
-        cursor: pointer;
+    #check:checked~.navbar{
+        height:100%;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.3rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
         transition: all 0.3s ease;
     }
-    .social__media img{
-        margin-left: 7%;
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    .navbar img{
         width: 20px;
         height: 20px;
-        cursor: pointer;
+        padding-top: 5%;
+        padding-left: 11%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
     }
-}
