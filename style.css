@@ -68,7 +68,7 @@ body{
 #check{
     display: none;
 }
-@media (max-width: 768px){
+@media only screen and (max-width: 380px){
     .header{
         position: fixed;
         top: 20%;
@@ -108,7 +108,7 @@ body{
     }
     .navbar {
         position: absolute;
-        top: -20%;
+        top: -22%;
         left: -4%;
         width: 150%;
         height:0;
@@ -117,7 +117,7 @@ body{
         transition: all 0.3s ease;
 }
     #check:checked~.navbar{
-        height:100%;
+        height:110%;
     }
     .navbar a {
         display: flex;
@@ -141,7 +141,7 @@ body{
         opacity: 1;
     }
     img.left{
-        margin-top: 8%;
+        margin-top: 2%;
         margin-left: 4%;
     }
     .navbar img{
@@ -152,12 +152,180 @@ body{
         transition: all 0.3s ease;
     }
 } 
- /* @media (max-width: 1024px){
+@media only screen and (min-width: 381px) and (max-width: 390px){
     .header{
         position: fixed;
         top: 20%;
         height: 100%;
-        width: 1024px;
+        width: 768px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -17%;
+        left: calc(100vw - 90px); 
+        z-index: 100;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .zakiety__img{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 150px;
+        transition: all 0.1s ease;
+        z-index: 100;
+    }
+    .space{
+        margin-top: 20%;
+    }
+    .navbar {
+        position: absolute;
+        top: -22%;
+        left: -4%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1.1rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 63%;
+        margin-top: -4%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    .navbar img{
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+} 
+@media only screen and (min-width: 391px) and (max-width: 430px){
+    .header{
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        width: 900px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -17%;
+        left: calc(100vw - 90px); 
+        z-index: 100;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .zakiety__img{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 150px;
+        transition: all 0.1s ease;
+        z-index: 100;
+    }
+    .space{
+        margin-top: 20%;
+    }
+    .navbar {
+        position: absolute;
+        top: -22%;
+        left: -5%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 65%;
+        margin-top: -4%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 2%;
+        margin-left: 5.5%;
+    }
+    .navbar img{
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+} 
+@media only screen and (min-width: 431px) and (max-width: 800px){
+    .header{
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        width: 900px;
         cursor: pointer;
         transition: all 0.3s ease;
     }
@@ -181,19 +349,19 @@ body{
     }
     .zakiety__img{
         position: fixed;
-        top: 3%;
+        top: 4%;
         left: 3%;
-        width: 150px;
+        width: 180px;
         transition: all 0.1s ease;
         z-index: 100;
     }
     .space{
-        margin-top: 13%;
+        margin-top: 20%;
     }
     .navbar {
         position: absolute;
-        top: -25%;
-        left: -4%;
+        top: -22%;
+        left: -5%;
         width: 150%;
         height:0;
         background: #131311;
@@ -201,16 +369,15 @@ body{
         transition: all 0.3s ease;
 }
     #check:checked~.navbar{
-        height:100%;
+        height:110%;
     }
     .navbar a {
         display: flex;
-        font-size: 1.2rem;
+        font-size: 2rem;
         align-items: center;
         justify-content: center;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        margin-left: 20%;
+        margin-right: 40%;
+        margin-top: -4%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -226,13 +393,185 @@ body{
         opacity: 1;
     }
     img.left{
-        margin-left: 20%;
+        margin-top: 2%;
+        margin-left: 15%;
     }
     .navbar img{
-        width: 20px;
-        height: 20px;
+        width: 28px;
+        height: 28px;
+        margin-left: 5%;
         transform: translateY(-50px);
         opacity: 0;
         transition: all 0.3s ease;
     }
-}   */
+} 
+@media only screen and (width: 540px) and (height: 720px){
+    .header{
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        width: 540px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -17%;
+        left: calc(100vw - 110px); 
+        z-index: 100;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .zakiety__img{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 180px;
+        transition: all 0.1s ease;
+        z-index: 100;
+    }
+    .space{
+        margin-top: 20%;
+    }
+    .navbar {
+        position: absolute;
+        top: -22%;
+        left: -5%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 33%;
+        margin-top: 2%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+    .navbar img{
+        width: 28px;
+        height: 28px;
+        margin-left: 5%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+} 
+@media only screen and (width: 280px) and (height: 653px){
+    .header{
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        width: 280px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: -17%;
+        left: calc(100vw - 80px); 
+        z-index: 100;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .zakiety__img{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 120px;
+        transition: all 0.1s ease;
+        z-index: 100;
+    }
+    .space{
+        margin-top: 20%;
+    }
+    .navbar {
+        position: absolute;
+        top: -15%;
+        left: -5%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 33%;
+        margin-top: 2%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .navbar img{
+        width: 16px;
+        height: 16px;
+        margin-left: 4.7%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+} 
