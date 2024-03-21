@@ -21,22 +21,64 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.zakiety__img{
+.click__zakiety img{
     position: fixed;
     top: 5%;
     left: 3%;
     width: 250px;
     transition: all 0.3s ease;
 }
-.zakiety__img:hover{
+.click__zakiety img:hover{
     color: #6d6d6d;
     filter: brightness(0.5);
 }
+.center, .content_modal{
+    position: absolute;
+    color:#131311;
+    top:10%;
+    left: 250%;
+    transform: translate(-50%,-50%);
+}
+#click{
+    display: none;
+}
+.click__zakiety{
+    cursor: pointer;
+}
+.content_modal{
+    opacity: 0;
+    visibility: hidden;
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+#click:checked ~ .content_modal{
+    opacity: 1;
+    visibility: visible;
+}
+.header_modal{
+    height: 90px;
+    background-color: #131311;
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+}
+.header_modal h2{
+    color:#fff;
+    padding-left: 40%;
+}
+#close{
+    position: absolute;
+    top:2%;
+    left: 2%;
+    cursor: pointer;
+}
+
 .navbar a{
     display: block;
     font-size: 1rem;
     margin-top: 10%;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     color: #fff;
     text-decoration: none;
     font-weight: 800;
@@ -55,7 +97,6 @@ body{
     display: none;
 }
 .navbar img{
-    margin-right: 4%;
     width: 16px;
     height: 16px;
     transition: all 0.3s ease;
@@ -63,6 +104,14 @@ body{
 .navbar img:hover{
     color: #6d6d6d;
     filter: brightness(0.5);
+}
+.social__links{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 50%;
+    gap: 10%;
+
 }
 
 #check{
@@ -108,7 +157,7 @@ body{
     }
     .navbar {
         position: absolute;
-        top: -22%;
+        top: -26%;
         left: -4%;
         width: 150%;
         height:0;
@@ -125,7 +174,7 @@ body{
         align-items: center;
         justify-content: center;
         margin-right: 65%;
-        margin-top: -4%;
+        margin-top: -2%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -140,16 +189,16 @@ body{
         transition-delay: calc(.15s * var(i));
         opacity: 1;
     }
-    img.left{
-        margin-top: 2%;
-        margin-left: 4%;
-    }
     .navbar img{
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         transform: translateY(-50px);
         opacity: 0;
         transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-left: 16%;
+        margin-right: 78%;
     }
 } 
 @media only screen and (min-width: 381px) and (max-width: 390px){
@@ -192,7 +241,7 @@ body{
     }
     .navbar {
         position: absolute;
-        top: -22%;
+        top: -26%;
         left: -4%;
         width: 150%;
         height:0;
@@ -209,7 +258,7 @@ body{
         align-items: center;
         justify-content: center;
         margin-right: 63%;
-        margin-top: -4%;
+        margin-top: -2%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -235,8 +284,12 @@ body{
         opacity: 0;
         transition: all 0.3s ease;
     }
+    .social__links{
+        margin-left: 17%;
+        margin-right: 77%;
+    }
 } 
-@media only screen and (min-width: 391px) and (max-width: 430px){
+@media only screen and (min-width: 391px) and (max-width: 414px){
     .header{
         position: fixed;
         top: 20%;
@@ -276,7 +329,7 @@ body{
     }
     .navbar {
         position: absolute;
-        top: -22%;
+        top: -26%;
         left: -5%;
         width: 150%;
         height:0;
@@ -293,7 +346,7 @@ body{
         align-items: center;
         justify-content: center;
         margin-right: 65%;
-        margin-top: -4%;
+        margin-top: -2%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -318,6 +371,98 @@ body{
         transform: translateY(-50px);
         opacity: 0;
         transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-left: 16%;
+        margin-right: 78%;
+    }
+} 
+@media only screen and (min-width: 415px) and (max-width: 430px){
+    .header{
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        width: 900px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -17%;
+        left: calc(100vw - 90px); 
+        z-index: 100;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .zakiety__img{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 150px;
+        transition: all 0.1s ease;
+        z-index: 100;
+    }
+    .space{
+        margin-top: 20%;
+    }
+    .navbar {
+        position: absolute;
+        top: -26%;
+        left: -5%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 63%;
+        margin-top: -2%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 2%;
+        margin-left: 5.5%;
+    }
+    .navbar img{
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-left: 17%;
+        margin-right: 77%;
     }
 } 
 @media only screen and (min-width: 431px) and (max-width: 800px){
@@ -360,7 +505,7 @@ body{
     }
     .navbar {
         position: absolute;
-        top: -22%;
+        top: -24%;
         left: -5%;
         width: 150%;
         height:0;
@@ -377,7 +522,7 @@ body{
         align-items: center;
         justify-content: center;
         margin-right: 40%;
-        margin-top: -4%;
+        margin-top: -1%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -392,17 +537,20 @@ body{
         transition-delay: calc(.15s * var(i));
         opacity: 1;
     }
-    img.left{
-        margin-top: 2%;
-        margin-left: 15%;
-    }
     .navbar img{
         width: 28px;
         height: 28px;
-        margin-left: 5%;
+        margin-left: 10%;
+        margin-right: -30%;
         transform: translateY(-50px);
         opacity: 0;
         transition: all 0.3s ease;
+    }
+
+    .social__links{
+        margin-left: 25%; 
+        margin-right: 59%;
+    
     }
 } 
 @media only screen and (width: 540px) and (height: 720px){
@@ -461,7 +609,7 @@ body{
         font-size: 1.3rem;
         align-items: center;
         justify-content: center;
-        margin-right: 33%;
+        margin-right: 31%;
         margin-top: 2%;
         opacity: 0;
         transition: all 0.3s ease;
@@ -477,17 +625,19 @@ body{
         transition-delay: calc(.15s * var(i));
         opacity: 1;
     }
-    img.left{
-        margin-top: 2%;
-        margin-left: 15%;
-    }
     .navbar img{
-        width: 28px;
-        height: 28px;
+        width: 20px;
+        height: 20px;
         margin-left: 5%;
         transform: translateY(-50px);
         opacity: 0;
         transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-top: 11%;
+        margin-left: 27%; 
+        margin-right: 52%;
+    
     }
 } 
 @media only screen and (width: 280px) and (height: 653px){
@@ -573,5 +723,11 @@ body{
         transform: translateY(-50px);
         opacity: 0;
         transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-top: 11%;
+        margin-left: 27%; 
+        margin-right: 52%;
+    
     }
 } 
