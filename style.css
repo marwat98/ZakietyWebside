@@ -21,6 +21,11 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.center{
+    position: absolute;
+    left: 2%;
+    top: 5%;
+}
 .click__zakiety img{
     position: fixed;
     top: 5%;
@@ -32,45 +37,80 @@ body{
     color: #6d6d6d;
     filter: brightness(0.5);
 }
-.center, .content_modal{
-    position: absolute;
-    color:#131311;
-    top:10%;
-    left: 250%;
-    transform: translate(-50%,-50%);
-}
 #click{
     display: none;
 }
 .click__zakiety{
     cursor: pointer;
 }
+
 .content_modal{
+    position: fixed; 
+    color:#131311;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     opacity: 0;
     visibility: hidden;
-    width: 500px;
-    height: 300px;
+    width: 80%;
+    height: 90%;
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
+    z-index: 10; 
 }
 #click:checked ~ .content_modal{
     opacity: 1;
     visibility: visible;
 }
-.header_modal{
-    height: 90px;
-    background-color: #131311;
-    overflow: hidden;
-    border-radius: 3px 3px 0 0;
-}
-.header_modal h2{
-    color:#fff;
-    padding-left: 40%;
-}
-#close{
+.header_modal img{
     position: absolute;
-    top:2%;
-    left: 2%;
+    top: 12%;
+    left: 52%;
+    color: #131311;
+    height: 520px;
+    width: 520px;
+    border-radius: 5px;
+}
+.header_modal h1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    line-height: 1.5;
+    font-size: 2em;
+    font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.akwarium{
+    margin-left: 5%;
+    font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+.header_modal p {
+    position: absolute;
+    top:48%;
+    left: 20%;
+}
+.header_modal button  {
+        position: absolute;
+        font-size: 0.9rem;
+        top: 55%;
+        left: 21.5%;
+        width: 80px;
+        height: 50px;
+        background-color: #fff;
+        border: 2px solid black; 
+        border-radius: 5px; 
+        transition: 0.5s ease;
+    }
+.header_modal button:hover{
+    background-color: #131311;
+    border: 2px solid black; 
+    color:#fff;
+}
+.close img{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top:3%;
+    left:2%;
     cursor: pointer;
 }
 
