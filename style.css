@@ -1,4 +1,4 @@
-* {
+ *{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -67,8 +67,8 @@ body{
     top: 15%;
     left: 52%;
     color: #131311;
-    height: 75%;
-    width: 45%;
+    height: auto;
+    width: 50%;
     border-radius: 5px;
 }
 .header_modal h1{
@@ -158,7 +158,7 @@ body{
     display: none;
 }
 /* Mobile screen */
-@media only screen and (min-width: 350px) and (max-width: 360px){
+ @media only screen and (min-width: 350px) and (max-width: 360px){
     .header{
         position: fixed;
         top: 20%;
@@ -284,19 +284,19 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 55%;
-        left: 10%;
+        top: 60%;
+        left: 25%;
         color: #131311;
-        height: 40%;
-        width: 80%;
+        height: auto;
+        max-width:100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
-        top: 10%;
-        left: 4%;
+        top: 13%;
+        left: 12%;
         line-height: 1.5;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
@@ -305,16 +305,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        top:25%;
-        left: 30%;
+        font-size: 0.9em;
+        top:28%;
+        left: 33%;
     }
     .header_modal button  {
             position: absolute;
-            font-size: 0.9rem;
-            top: 33%;
+            font-size: 0.9em;
+            top: 40%;
             left: 35%;
-            width: 80px;
-            height: 50px;
+            width: 30%;
+            height: 8%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -470,27 +471,28 @@ body{
     .header_modal h1{
         position: absolute;
         top: 10%;
-        left: 7%;
+        left: 8%;
         line-height: 1.5;
         font-size: 1.5em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
-        margin-left: 5%;
+        margin-left: 7%;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .header_modal p {
         position: absolute;
-        top:25%;
-        left: 32%;
+        font-size: 0.8em;
+        top:28%;
+        left: 34%;
     }
     .header_modal button  {
             position: absolute;
             font-size: 0.9rem;
-            top: 33%;
-            left: 37%;
-            width: 80px;
-            height: 50px;
+            top: 38%;
+            left: 36%;
+            width: 25%;
+            height: 8%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -641,17 +643,17 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 50%;
-        left: 10%;
+        top: 60%;
+        left: 25%;
         color: #131311;
-        height: 40%;
-        width: 80%;
+        height: auto;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
-        top: 10%;
-        left: 8%;
+        top: 15%;
+        left: 9%;
         line-height: 1.5;
         font-size: 1.5em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
@@ -662,16 +664,16 @@ body{
     }
     .header_modal p {
         position: absolute;
-        top:25%;
+        top:30%;
         left: 32%;
     }
     .header_modal button  {
             position: absolute;
             font-size: 0.9rem;
-            top: 33%;
+            top: 42%;
             left: 37%;
-            width: 80px;
-            height: 50px;
+            width: 25%;
+            height: 8%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -822,16 +824,16 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 50%;
-        left: 10%;
+        top: 60%;
+        left: 25%;
         color: #131311;
-        height: 40%;
-        width: 80%;
+        height: auto;
+        max-width:100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
-        top: 10%;
+        top: 15%;
         left: 11%;
         line-height: 1.5;
         font-size: 1.5em;
@@ -843,13 +845,13 @@ body{
     }
     .header_modal p {
         position: absolute;
-        top:24%;
+        top:30%;
         left: 33%;
     }
     .header_modal button  {
             position: absolute;
             font-size: 0.9rem;
-            top: 33%;
+            top: 40%;
             left: 37%;
             width: 80px;
             height: 50px;
@@ -1003,17 +1005,17 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 50%;
-        left: 10%;
+        top: 60%;
+        left: 25%;
         color: #131311;
-        height: 40%;
-        width: 80%;
+        height: auto;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
-        top: 10%;
-        left: 12%;
+        top: 15%;
+        left: 14%;
         line-height: 1.5;
         font-size: 1.5em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
@@ -1024,16 +1026,16 @@ body{
     }
     .header_modal p {
         position: absolute;
-        top:25%;
-        left: 34%;
+        top:31%;
+        left: 35%;
     }
     .header_modal button  {
             position: absolute;
             font-size: 0.9rem;
-            top: 33%;
+            top: 42%;
             left: 38%;
-            width: 80px;
-            height: 50px;
+            width: 25%;
+            height: 8%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -1184,19 +1186,19 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 50%;
-        left: 21%;
+        top: 55%;
+        left: 26%;
         color: #131311;
-        height: 40%;
-        width: 60%;
+        height: auto;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
         top: 13%;
-        left: 23%;
+        left: 18%;
         line-height: 1.5;
-        font-size: 2em;
+        font-size: 2.4em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
@@ -1205,16 +1207,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        top:28%;
-        left: 42%;
+        font-size: 1.2em;
+        top:30%;
+        left: 40%;
     }
     .header_modal button  {
             position: absolute;
             font-size: 0.9rem;
-            top: 35%;
-            left: 45%;
-            width: 80px;
-            height: 50px;
+            top: 40%;
+            left: 41%;
+            width: 20%;
+            height: 6%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -1364,17 +1367,17 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 50%;
-        left: 18%;
+        top: 55%;
+        left: 25%;
         color: #131311;
-        height: 45%;
-        width: 65%;
+        height: auto;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
         top: 13%;
-        left: 14%;
+        left: 16%;
         line-height: 1.5;
         font-size: 1.8em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
@@ -1385,17 +1388,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        font-size: 1rem;
+        font-size: 0.9em;
         top:30%;
-        left: 37%;
+        left: 39%;
     }
     .header_modal button  {
             position: absolute;
             font-size: 0.9rem;
-            top: 38%;
-            left: 41%;
-            width: 80px;
-            height: 50px;
+            top: 40%;
+            left: 40%;
+            width: 20%;
+            height: 8%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -1550,19 +1553,19 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 52%;
-        left: 10%;
+        top: 65%;
+        left: 25%;
         color: #131311;
-        height: 40%;
-        width: 80%;
+        height: auto;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
-        top: 13%;
-        left: 11%;
+        top: 20%;
+        left: 8%;
         line-height: 1.5;
-        font-size: 1em;
+        font-size: 1.1em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
@@ -1571,17 +1574,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        font-size: 0.6rem;
-        top:28%;
-        left: 35%;
+        font-size: 0.7em;
+        top:35%;
+        left: 33%;
     }
     .header_modal button  {
             position: absolute;
-            font-size: 0.6rem;
-            top: 35%;
-            left: 36%;
-            width: 60px;
-            height: 30px;
+            font-size: 0.6em;
+            top: 48%;
+            left: 37%;
+            width: 25%;
+            height: 8%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -1657,19 +1660,19 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 43%;
-        left: 15%;
+        top: 55%;
+        left: 25%;
         color: #131311;
-        height: 45%;
-        width: 70%;
+        height: auto;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
         top: 13%;
-        left: 21%;
+        left: 18%;
         line-height: 1.5;
-        font-size: 2.2em;
+        font-size: 2.5em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
@@ -1678,16 +1681,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        top:25%;
-        left: 41%;
+        font-size: 1.2em;
+        top:32%;
+        left: 39%;
     }
     .header_modal button  {
             position: absolute;
-            font-size: 0.9rem;
-            top: 32%;
-            left: 43%;
-            width: 80px;
-            height: 50px;
+            font-size: 0.9em;
+            top: 40%;
+            left: 39%;
+            width: 20%;
+            height: 6%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -1763,11 +1767,11 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 43%;
-        left: 16%;
+        top: 55%;
+        left: 25%;
         color: #131311;
-        height: 50%;
-        width: 70%;
+        height: auto;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
@@ -1784,17 +1788,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        font-size: 1.2rem;
-        top:28%;
-        left: 42%;
+        font-size: 1.5em;
+        top:30%;
+        left: 40%;
     }
     .header_modal button  {
             position: absolute;
-            font-size: 0.9rem;
-            top: 35%;
-            left: 45%;
-            width: 80px;
-            height: 50px;
+            font-size: 1em;
+            top: 40%;
+            left: 43%;
+            width: 15%;
+            height: 6%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -1977,11 +1981,11 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 43%;
-        left: 11%;
+        top: 55%;
+        left: 25%;
         color: #131311;
-        height: 50%;
-        width: 80%;
+        height: auto;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
@@ -1998,17 +2002,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        font-size: 1.2rem;
-        top:28%;
-        left: 41%;
+        font-size: 1.5em;
+        top:30%;
+        left: 38%;
     }
     .header_modal button  {
             position: absolute;
-            font-size: 0.9rem;
-            top: 35%;
-            left: 44.5%;
-            width: 80px;
-            height: 50px;
+            font-size: 1em;
+            top: 40%;
+            left: 42%;
+            width: 15%;
+            height: 6%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -2028,13 +2032,13 @@ body{
         cursor: pointer;
     }
 
-}
-@media only screen and (min-width: 821px) and (max-width: 899px){
+} 
+ @media only screen and (min-width: 821px) and (max-width: 899px){
     .navbar a{
         display: block;
-        font-size: 1rem;
-        margin-top: -20%;
-        margin-bottom: 30%;
+        font-size: 1.1em;
+        margin-top: 1%;
+        margin-bottom: 11%;
         color: #fff;
         text-decoration: none;
         font-weight: 800;
@@ -2048,9 +2052,9 @@ body{
     }
     .click__zakiety img{
         position: fixed;
-        top: 3%;
-        left: 2%;
-        width: 0px;
+        top: 5%;
+        left: 3%;
+        width: 250px;
         transition: all 0.3s ease;
     }
     .click__zakiety img:hover{
@@ -2084,38 +2088,38 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 43%;
-        left: 10%;
+        top: 55%;
+        left: 25.5%;
         color: #131311;
-        height: 550px;
-        width: 550px;
+        height: auto;
+        max-width:100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
-        top: 13%;
-        left: 14%;
+        top: 15%;
+        left: 18%;
         line-height: 1.5;
-        font-size: 3em;
+        font-size: 2.7em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
-        margin-left: 5%;
+        margin-left: 7%;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .header_modal p {
         position: absolute;
-        font-size: 1.2rem;
-        top:27%;
-        left: 40%;
+        font-size: 1.3em;
+        top:30%;
+        left: 39%;
     }
     .header_modal button  {
             position: absolute;
-            font-size: 0.9rem;
-            top: 32%;
-            left: 44%;
-            width: 80px;
-            height: 50px;
+            font-size: 1em;
+            top: 40%;
+            left: 42%;
+            width: 15%;
+            height: 6%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -2134,10 +2138,10 @@ body{
         left:5%;
         cursor: pointer;
     }
-
 }
+
 /* Monitor screen */
-@media only screen and (width: 1280px) and (height: 800px){
+@media only screen and (min-width: 1280px) and (max-width: 1599px){
     .navbar a{
         display: block;
         font-size: 1rem;
@@ -2192,19 +2196,19 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 18%;
-        left: 50%;
+        top: 9%;
+        left: 48%;
         color: #131311;
         height: auto;
-        width: 45%;
+        max-width:100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
-        top: 32%;
-        left: 4%;
+        top: 28%;
+        left: 6%;
         line-height: 1.5;
-        font-size: 2vm;
+        font-size: 2.2em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
@@ -2213,17 +2217,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        font-size: 1vm;
-        top:52%;
+        font-size: 1em;
+        top:47%;
         left: 18%;
     }
     .header_modal button  {
             position: absolute;
-            font-size: 0.8rem;
-            top: 62%;
-            left: 19.5%;
-            width: 80px;
-            height: 40px;
+            font-size: 1em;
+            top: 57%;
+            left: 18%;
+            width: 10%;
+            height: 7%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -2242,10 +2246,9 @@ body{
         left:5%;
         cursor: pointer;
     }
-
 }
-@media only screen and (width: 1600px) and (height: 900px){
-    .navbar a{
+@media only screen and (min-width: 1600px) and (max-width: 1918px){ 
+     .navbar a{
         display: block;
         font-size: 1rem;
         margin-top: 10%;
@@ -2299,19 +2302,19 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 10%;
-        left: 50%;
+        top: 8%;
+        left: 47%;
         color: #131311;
         height: auto;
-        width: 45%;
+        max-width: 100%;
         border-radius: 5px;
     }
     .header_modal h1{
         position: absolute;
-        top: 32%;
-        left: 8%;
+        top: 26%;
+        left: 5%;
         line-height: 1.5;
-        font-size: 2.5vm;
+        font-size: 2.8em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
@@ -2320,17 +2323,17 @@ body{
     }
     .header_modal p {
         position: absolute;
-        font-size: 2.5vm;
-        top:52%;
-        left: 20%;
+        font-size: 1.2em;
+        top:48%;
+        left: 17%;
     }
     .header_modal button  {
             position: absolute;
-            font-size: 0.9vm;
-            top: 62%;
-            left: 20%;
-            width: 110px;
-            height: 50px;
+            font-size: 1.2em;
+            top: 57%;
+            left: 17%;
+            width: 10%;
+            height: 6%;
             background-color: #fff;
             border: 2px solid black; 
             border-radius: 5px; 
@@ -2350,8 +2353,8 @@ body{
         cursor: pointer;
     }
 
-}
-@media only screen and (width: 1920px) and (height: 1080px){
+} 
+ @media only screen and (min-width: 1919px){
     .navbar a{
         display: block;
         font-size: 1rem;
@@ -2371,7 +2374,7 @@ body{
     .click__zakiety img{
         position: fixed;
         top: 6%;
-        left: 3%;
+        left: 4%;
         width: 18%;
         transition: all 0.3s ease;
     }
@@ -2406,19 +2409,20 @@ body{
     }
     .header_modal img{
         position: absolute;
-        top: 18%;
-        left: 50%;
-        color: #131311;
-        height: 70%;
-        width: 45%;
+        top: 45%;
+        left: 75%;
+        transform: translate(-50%, -50%); /* Centrowanie obrazu */
+        max-height: 60vh; /* Dostosowanie do 80% wysokości viewportu */
+        max-width: 100%; /* Zapobieganie wyjściu poza szerokość kontenera */
         border-radius: 5px;
+        object-fit: contain; /* Zachowanie proporcji bez przycinania */
     }
     .header_modal h1{
         position: absolute;
-        top: 32%;
-        left: 8%;
+        top: 28%;
+        left: 5%;
         line-height: 1.5;
-        font-size: 3em;
+        font-size: 3.5em;
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     }
     .akwarium{
@@ -2457,4 +2461,4 @@ body{
         cursor: pointer;
     }
 
-}
+} 
