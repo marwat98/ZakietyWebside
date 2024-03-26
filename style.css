@@ -2414,6 +2414,7 @@ body{
         transform: translate(-50%, -50%); /* Centrowanie obrazu */
         max-height: 60vh; /* Dostosowanie do 80% wysokości viewportu */
         max-width: 100%; /* Zapobieganie wyjściu poza szerokość kontenera */
+        color: #131311;
         border-radius: 5px;
         object-fit: contain; /* Zachowanie proporcji bez przycinania */
     }
