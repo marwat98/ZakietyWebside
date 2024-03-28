@@ -2443,8 +2443,7 @@ body{
         flex-direction: column; 
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
         position: relative;
-    }
-    
+    }  
     .text_block h1, .text_block h2, .text_block h3 {
         white-space: nowrap;
     }
@@ -2479,6 +2478,15 @@ body{
         height: 50px;
         background-color: #fff;
         border: 2px solid black;
+    }
+    .header_modal img{
+        position: absolute;
+        top: 45%;
+        left: 75%;
+        transform: translate(-50%, -50%); /* Centrowanie obrazu */
+        max-height: 60vh; /* Dostosowanie do 80% wysokości viewportu */
+        max-width: 100%; /* Zapobieganie wyjściu poza szerokość kontenera */
+        color: #131311;
         border-radius: 5px;
         transition: 0.5s ease;
     }
