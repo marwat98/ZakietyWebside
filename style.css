@@ -42,8 +42,8 @@ body{
 }
 .click__zakiety{
     cursor: pointer;
-}
 
+}
 .content_modal{
     position: fixed; 
     color:#131311;
@@ -56,7 +56,7 @@ body{
     height: 830px;
     background-color: #fff;
     border-radius: 5px;
-    z-index: 10; 
+    z-index: 1000; 
 }
 #click:checked ~ .content_modal{
     opacity: 1;
@@ -73,7 +73,7 @@ body{
         border: 2px solid black; 
         border-radius: 5px; 
         transition: 0.5s ease;
-    }
+}
 .header_modal button:hover{
     background-color: #131311;
     border: 2px solid black; 
@@ -97,6 +97,7 @@ body{
     top:3%;
     left:2%;
     cursor: pointer;
+    z-index: 1000;
 }
 .navbar {
     position: fixed; 
@@ -141,13 +142,1002 @@ body{
     align-items: center; 
     margin-right: 87%;
     gap: 10%;
-
 }
-
 #check{
     display: none;
 }
+
 /* Mobile screen */
+@media only screen and (min-width: 280px) and (max-width: 285px){
+    .header{
+        position: fixed;
+        top: 10%;
+        height: 100%;
+        width: 280px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: -8%;
+        left: calc(100vw - 80px); 
+        z-index: 10000;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .click__zakiety{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 120px;
+        transition: all 0.1s ease;
+        z-index: 10000;
+    }
+    .space{
+        margin-top: 30%;
+    }
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: -5%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 31%;
+        margin-top: 8%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .navbar img{
+        width: 16px;
+        height: 16px;
+        margin-left: 4.7%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-top: 11%;
+        margin-left: 27%; 
+        margin-right: 52%;
+    
+    }
+    .center{
+        position: absolute;
+        left: 2%;
+        top: 5%;
+    }
+    .click__zakiety img{
+        position: fixed;
+        top: 3%;
+        left: 2%;
+        width: 150px;
+    }
+    .click__zakiety img:hover{
+        color: #6d6d6d;
+        filter: brightness(0.5);
+    }
+    #click{
+        display: none;
+    }
+    .click__zakiety{
+        cursor: pointer;
+    }
+    
+    .content_modal{
+        position: fixed; 
+        color:#131311;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0;
+        visibility: hidden;
+        width: 250px;
+        max-height: 500px;
+        background-color: #fff;
+        border-radius: 5px;
+        z-index: 100;
+        overflow: auto; 
+    }
+    #click:checked ~ .content_modal{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
+        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
+    }
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 50px;
+    }
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 85px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 90px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
+        background-color: #131311;
+        border: 2px solid black; 
+        color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:5%;
+        left:8%;
+        cursor: pointer;
+    }
+} 
+@media only screen and (min-width: 286px) and (max-width: 300px){
+    .header{
+        position: fixed;
+        top: 10%;
+        height: 100%;
+        width: 280px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: -8%;
+        left: calc(100vw - 80px); 
+        z-index: 10000;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .click__zakiety{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 120px;
+        transition: all 0.1s ease;
+        z-index: 10000;
+    }
+    .space{
+        margin-top: 30%;
+    }
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: -5%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25%;
+        margin-top: 8%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .navbar img{
+        width: 16px;
+        height: 16px;
+        margin-left: 4.7%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-top: 11%;
+        margin-left: 27%; 
+        margin-right: 49%;
+    
+    }
+    .center{
+        position: absolute;
+        left: 2%;
+        top: 5%;
+    }
+    .click__zakiety img{
+        position: fixed;
+        top: 3%;
+        left: 2%;
+        width: 150px;
+    }
+    .click__zakiety img:hover{
+        color: #6d6d6d;
+        filter: brightness(0.5);
+    }
+    #click{
+        display: none;
+    }
+    .click__zakiety{
+        cursor: pointer;
+    }
+    
+    .content_modal{
+        position: fixed; 
+        color:#131311;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0;
+        visibility: hidden;
+        width: 250px;
+        max-height: 500px;
+        background-color: #fff;
+        border-radius: 5px;
+        z-index: 100;
+        overflow: auto; 
+    }
+    #click:checked ~ .content_modal{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
+        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
+    }
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 50px;
+    }
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 85px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 90px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
+        background-color: #131311;
+        border: 2px solid black; 
+        color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:5%;
+        left:8%;
+        cursor: pointer;
+    }
+} 
+@media only screen and (min-width: 301px) and (max-width: 320px){
+    .header{
+        position: fixed;
+        top: 10%;
+        height: 100%;
+        width: 280px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: -8%;
+        left: calc(100vw - 80px); 
+        z-index: 10000;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .click__zakiety{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 120px;
+        transition: all 0.1s ease;
+        z-index: 10000;
+    }
+    .space{
+        margin-top: 30%;
+    }
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: -8%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20%;
+        margin-top: 8%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .navbar img{
+        width: 16px;
+        height: 16px;
+        margin-left: 4.7%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-top: 11%;
+        margin-left: 30%; 
+        margin-right: 42%;
+    
+    }
+    .center{
+        position: absolute;
+        left: 2%;
+        top: 5%;
+    }
+    .click__zakiety img{
+        position: fixed;
+        top: 3%;
+        left: 2%;
+        width: 150px;
+    }
+    .click__zakiety img:hover{
+        color: #6d6d6d;
+        filter: brightness(0.5);
+    }
+    #click{
+        display: none;
+    }
+    .click__zakiety{
+        cursor: pointer;
+    }
+    
+    .content_modal{
+        position: fixed; 
+        color:#131311;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0;
+        visibility: hidden;
+        width: 250px;
+        max-height: 500px;
+        background-color: #fff;
+        border-radius: 5px;
+        z-index: 100;
+        overflow: auto; 
+    }
+    #click:checked ~ .content_modal{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
+        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
+    }
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 50px;
+    }
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 85px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 90px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
+        background-color: #131311;
+        border: 2px solid black; 
+        color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:5%;
+        left:8%;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 330px){
+    .header{
+        position: fixed;
+        top: 10%;
+        height: 100%;
+        width: 280px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: -8%;
+        left: calc(100vw - 80px); 
+        z-index: 10000;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .click__zakiety{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 120px;
+        transition: all 0.1s ease;
+        z-index: 10000;
+    }
+    .space{
+        margin-top: 30%;
+    }
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: -8%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16%;
+        margin-top: 8%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .navbar img{
+        width: 16px;
+        height: 16px;
+        margin-left: 4.7%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-top: 11%;
+        margin-left: 28%; 
+        margin-right: 40%;
+    
+    }
+    .center{
+        position: absolute;
+        left: 2%;
+        top: 5%;
+    }
+    .click__zakiety img{
+        position: fixed;
+        top: 3%;
+        left: 2%;
+        width: 150px;
+    }
+    .click__zakiety img:hover{
+        color: #6d6d6d;
+        filter: brightness(0.5);
+    }
+    #click{
+        display: none;
+    }
+    .click__zakiety{
+        cursor: pointer;
+    }
+    
+    .content_modal{
+        position: fixed; 
+        color:#131311;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0;
+        visibility: hidden;
+        width: 250px;
+        max-height: 500px;
+        background-color: #fff;
+        border-radius: 5px;
+        z-index: 100;
+        overflow: auto; 
+    }
+    #click:checked ~ .content_modal{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
+        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
+    }
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 50px;
+    }
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 85px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 90px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
+        background-color: #131311;
+        border: 2px solid black; 
+        color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:5%;
+        left:8%;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 331px) and (max-width: 349px){
+    .header{
+        position: fixed;
+        top: 10%;
+        height: 100%;
+        width: 280px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: -8%;
+        left: calc(100vw - 80px); 
+        z-index: 10000;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .click__zakiety{
+        position: fixed;
+        top: 4%;
+        left: 3%;
+        width: 120px;
+        transition: all 0.1s ease;
+        z-index: 10000;
+    }
+    .space{
+        margin-top: 30%;
+    }
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: -8%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-right: 11%;
+        margin-top: 8%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    img.left{
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .navbar img{
+        width: 16px;
+        height: 16px;
+        margin-left: 4.7%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .social__links{
+        margin-top: 11%;
+        margin-left: 27%; 
+        margin-right: 35%;
+    
+    }
+    .center{
+        position: absolute;
+        left: 2%;
+        top: 5%;
+    }
+    .click__zakiety img{
+        position: fixed;
+        top: 3%;
+        left: 2%;
+        width: 150px;
+    }
+    .click__zakiety img:hover{
+        color: #6d6d6d;
+        filter: brightness(0.5);
+    }
+    #click{
+        display: none;
+    }
+    .click__zakiety{
+        cursor: pointer;
+    }
+    
+    .content_modal{
+        position: fixed; 
+        color:#131311;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0;
+        visibility: hidden;
+        width: 250px;
+        max-height: 500px;
+        background-color: #fff;
+        border-radius: 5px;
+        z-index: 100;
+        overflow: auto; 
+    }
+    #click:checked ~ .content_modal{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
+        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
+    }
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 50px;
+    }
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 85px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 90px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
+        background-color: #131311;
+        border: 2px solid black; 
+        color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:5%;
+        left:8%;
+        cursor: pointer;
+    }
+}
  @media only screen and (min-width: 350px) and (max-width: 360px){
     .header{
         position: fixed;
@@ -159,11 +1149,11 @@ body{
     }
     .icons{
         position: absolute;
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
         top: -17%;
-        left: calc(100vw - 90px); 
-        z-index: 100;
+        left: calc(100vw - 80px); 
+        z-index: 10000;
         display: block;
     }
     #check:checked~.icons #menu-icon{
@@ -181,6 +1171,7 @@ body{
         left: 3%;
         width: 150px;
         transition: all 0.1s ease;
+        z-index: 10000;
     }
     .space{
         margin-top: 20%;
@@ -204,7 +1195,7 @@ body{
         align-items: center;
         justify-content: center;
         margin-right: 65%;
-        margin-top: -2%;
+        margin-top: 4%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -227,6 +1218,7 @@ body{
         transition: all 0.3s ease;
     }
     .social__links{
+        margin-top: 5%;
         margin-left: 16%;
         margin-right: 78%;
     }
@@ -234,7 +1226,6 @@ body{
         position: absolute;
         left: 2%;
         top: 5%;
-        z-index: 200;
     }
     .click__zakiety img{
         position: fixed;
@@ -262,66 +1253,81 @@ body{
         transform: translate(-50%, -50%); 
         opacity: 0;
         visibility: hidden;
-        width: 80%;
-        height: 80%;
+        width: 300px;
+        max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10; 
+        z-index: 10;
+        overflow: auto; 
     }
     #click:checked ~ .content_modal{
         opacity: 1;
         visibility: visible;
     }
-    .header_modal img{
-        position: absolute;
-        top: 60%;
-        left: 25%;
-        color: #131311;
-        height: auto;
-        max-width:100%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 13%;
-        left: 12%;
-        line-height: 1.5;
-        font-size: 1.3em;
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
     }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 35px;
     }
-    .header_modal p {
-        position: absolute;
-        font-size: 0.9em;
-        top:28%;
-        left: 33%;
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 75px;
     }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.9em;
-            top: 40%;
-            left: 35%;
-            width: 30%;
-            height: 8%;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 105px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 110px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
         background-color: #131311;
         border: 2px solid black; 
         color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
     }
     .close img{
         position: absolute;
         height: 20px;
         width: 20px;
-        top:3%;
-        left:5%;
+        top:5%;
+        left:8%;
         cursor: pointer;
     }
 } 
@@ -340,7 +1346,7 @@ body{
         height: 200px;
         top: -17%;
         left: calc(100vw - 90px); 
-        z-index: 100;
+        z-index: 10000;
         display: block;
     }
     #check:checked~.icons #menu-icon{
@@ -358,6 +1364,7 @@ body{
         left: 3%;
         width: 150px;
         transition: all 0.1s ease;
+        z-index: 10000;
     }
     .space{
         margin-top: 20%;
@@ -380,8 +1387,9 @@ body{
         font-size: 1.1rem;
         align-items: center;
         justify-content: center;
-        margin-right: 65%;
-        margin-top: -2%;
+        margin-right: 64%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -404,14 +1412,13 @@ body{
         transition: all 0.3s ease;
     }
     .social__links{
-        margin-left: 16%;
-        margin-right: 78%;
+        margin-left: 17%;
+        margin-right: 76%;
     }
     .center{
         position: absolute;
         left: 2%;
         top: 5%;
-        z-index: 200;
     }
     .click__zakiety img{
         position: fixed;
@@ -439,66 +1446,81 @@ body{
         transform: translate(-50%, -50%); 
         opacity: 0;
         visibility: hidden;
-        width: 80%;
-        height: 80%;
+        width: 300px;
+        max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10; 
+        z-index: 10;
+        overflow: auto; 
     }
     #click:checked ~ .content_modal{
         opacity: 1;
         visibility: visible;
     }
-    .header_modal img{
-        position: absolute;
-        top: 55%;
-        left: 15%;
-        color: #131311;
-        height: 40%;
-        width: 70%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 10%;
-        left: 8%;
-        line-height: 1.5;
-        font-size: 1.5em;
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
     }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 35px;
     }
-    .header_modal p {
-        position: absolute;
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 75px;
+    }
+    
+    .text_block h3 {
+        position: static;
         font-size: 0.8em;
-        top:28%;
-        left: 34%;
+        margin-top: 10px; 
+        margin-left: 105px;
     }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.9rem;
-            top: 38%;
-            left: 36%;
-            width: 25%;
-            height: 8%;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 110px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
         background-color: #131311;
         border: 2px solid black; 
         color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
     }
     .close img{
         position: absolute;
         height: 20px;
         width: 20px;
-        top:3%;
-        left:5%;
+        top:5%;
+        left:8%;
         cursor: pointer;
     }
 } 
@@ -517,7 +1539,7 @@ body{
         height: 200px;
         top: -17%;
         left: calc(100vw - 90px); 
-        z-index: 100;
+        z-index: 10000;
         display: block;
     }
     #check:checked~.icons #menu-icon{
@@ -529,13 +1551,13 @@ body{
     #check:checked~.icons #close-icon{
         display: block;
     }
-    .zakiety__img{
+    .click__zakiety img{
         position: fixed;
         top: 4%;
         left: 3%;
         width: 150px;
         transition: all 0.1s ease;
-        z-index: 100;
+        z-index: 10000;
     }
     .space{
         margin-top: 20%;
@@ -559,7 +1581,8 @@ body{
         align-items: center;
         justify-content: center;
         margin-right: 63%;
-        margin-top: -2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -593,7 +1616,6 @@ body{
         position: absolute;
         left: 2%;
         top: 5%;
-        z-index: 200;
     }
     .click__zakiety img{
         position: fixed;
@@ -621,65 +1643,81 @@ body{
         transform: translate(-50%, -50%); 
         opacity: 0;
         visibility: hidden;
-        width: 80%;
-        height: 70%;
+        width: 300px;
+        max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10; 
+        z-index: 10;
+        overflow: auto; 
     }
     #click:checked ~ .content_modal{
         opacity: 1;
         visibility: visible;
     }
-    .header_modal img{
-        position: absolute;
-        top: 60%;
-        left: 25%;
-        color: #131311;
-        height: auto;
-        max-width: 100%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 15%;
-        left: 9%;
-        line-height: 1.5;
-        font-size: 1.5em;
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
     }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 35px;
     }
-    .header_modal p {
-        position: absolute;
-        top:30%;
-        left: 32%;
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 75px;
     }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.9rem;
-            top: 42%;
-            left: 37%;
-            width: 25%;
-            height: 8%;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 105px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 110px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
         background-color: #131311;
         border: 2px solid black; 
         color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
     }
     .close img{
         position: absolute;
         height: 20px;
         width: 20px;
-        top:3%;
-        left:5%;
+        top:5%;
+        left:8%;
         cursor: pointer;
     }
 } 
@@ -698,7 +1736,7 @@ body{
         height: 200px;
         top: -17%;
         left: calc(100vw - 90px); 
-        z-index: 100;
+        z-index: 10000;
         display: block;
     }
     #check:checked~.icons #menu-icon{
@@ -710,13 +1748,13 @@ body{
     #check:checked~.icons #close-icon{
         display: block;
     }
-    .zakiety__img{
+    .click__zakiety img{
         position: fixed;
         top: 4%;
         left: 3%;
         width: 150px;
         transition: all 0.1s ease;
-        z-index: 100;
+        z-index: 10000;
     }
     .space{
         margin-top: 20%;
@@ -740,7 +1778,8 @@ body{
         align-items: center;
         justify-content: center;
         margin-right: 65%;
-        margin-top: -2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -774,7 +1813,6 @@ body{
         position: absolute;
         left: 2%;
         top: 5%;
-        z-index: 200;
     }
     .click__zakiety img{
         position: fixed;
@@ -802,65 +1840,81 @@ body{
         transform: translate(-50%, -50%); 
         opacity: 0;
         visibility: hidden;
-        width: 80%;
-        height: 70%;
+        width: 300px;
+        max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10; 
+        z-index: 10;
+        overflow: auto; 
     }
     #click:checked ~ .content_modal{
         opacity: 1;
         visibility: visible;
     }
-    .header_modal img{
-        position: absolute;
-        top: 60%;
-        left: 25%;
-        color: #131311;
-        height: auto;
-        max-width:100%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 15%;
-        left: 11%;
-        line-height: 1.5;
-        font-size: 1.5em;
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
     }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 35px;
     }
-    .header_modal p {
-        position: absolute;
-        top:30%;
-        left: 33%;
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 75px;
     }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.9rem;
-            top: 40%;
-            left: 37%;
-            width: 80px;
-            height: 50px;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 105px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 110px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
         background-color: #131311;
         border: 2px solid black; 
         color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
     }
     .close img{
         position: absolute;
         height: 20px;
         width: 20px;
-        top:3%;
-        left:5%;
+        top:5%;
+        left:8%;
         cursor: pointer;
     }
 } 
@@ -879,7 +1933,7 @@ body{
         height: 200px;
         top: -17%;
         left: calc(100vw - 90px); 
-        z-index: 100;
+        z-index: 10000;
         display: block;
     }
     #check:checked~.icons #menu-icon{
@@ -891,13 +1945,13 @@ body{
     #check:checked~.icons #close-icon{
         display: block;
     }
-    .zakiety__img{
+    .click__zakiety img{
         position: fixed;
         top: 4%;
         left: 3%;
         width: 150px;
         transition: all 0.1s ease;
-        z-index: 100;
+        z-index: 10000;
     }
     .space{
         margin-top: 20%;
@@ -921,7 +1975,8 @@ body{
         align-items: center;
         justify-content: center;
         margin-right: 63%;
-        margin-top: -2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -955,7 +2010,6 @@ body{
         position: absolute;
         left: 2%;
         top: 5%;
-        z-index: 200;
     }
     .click__zakiety img{
         position: fixed;
@@ -983,58 +2037,82 @@ body{
         transform: translate(-50%, -50%); 
         opacity: 0;
         visibility: hidden;
-        width: 80%;
-        height: 70%;
+        width: 300px;
+        max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10; 
+        z-index: 10;
+        overflow: auto; 
     }
     #click:checked ~ .content_modal{
         opacity: 1;
         visibility: visible;
     }
-    .header_modal img{
-        position: absolute;
-        top: 60%;
-        left: 25%;
-        color: #131311;
-        height: auto;
-        max-width: 100%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 15%;
-        left: 14%;
-        line-height: 1.5;
-        font-size: 1.5em;
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
     }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 35px;
     }
-    .header_modal p {
-        position: absolute;
-        top:31%;
-        left: 35%;
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 75px;
     }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.9rem;
-            top: 42%;
-            left: 38%;
-            width: 25%;
-            height: 8%;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 105px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 110px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
         background-color: #131311;
         border: 2px solid black; 
         color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 40%;
+        margin-left: -29%;
+        height: 200px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:5%;
+        left:3%;
+        cursor: pointer;
     }
     .close img{
         position: absolute;
@@ -1060,7 +2138,7 @@ body{
         height: 200px;
         top: -17%;
         left: calc(100vw - 110px); 
-        z-index: 100;
+        z-index: 1000;
         display: block;
     }
     #check:checked~.icons #menu-icon{
@@ -1098,11 +2176,12 @@ body{
     }
     .navbar a {
         display: flex;
-        font-size: 2rem;
+        font-size: 1.5em;
         align-items: center;
         justify-content: center;
         margin-right: 40%;
         margin-top: -1%;
+        margin-bottom: 5%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -1136,7 +2215,7 @@ body{
         position: absolute;
         left: 2%;
         top: 5%;
-        z-index: 200;
+        z-index: 1000;
     }
     .click__zakiety img{
         position: fixed;
@@ -1164,426 +2243,82 @@ body{
         transform: translate(-50%, -50%); 
         opacity: 0;
         visibility: hidden;
-        width: 80%;
-        height: 80%;
+        width: 400px;
+        max-height: 580px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10; 
+        z-index: 10;
+        overflow: auto; 
     }
     #click:checked ~ .content_modal{
         opacity: 1;
         visibility: visible;
     }
-    .header_modal img{
-        position: absolute;
-        top: 55%;
-        left: 26%;
-        color: #131311;
-        height: auto;
-        max-width: 100%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 13%;
-        left: 18%;
-        line-height: 1.5;
-        font-size: 2.4em;
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
         font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
     }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-    }
-    .header_modal p {
-        position: absolute;
+    .text_block h1{
+        position: static;
         font-size: 1.2em;
-        top:30%;
-        left: 40%;
+        margin-top: 80px;
+        margin-left: 90px;
     }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.9rem;
-            top: 40%;
-            left: 41%;
-            width: 20%;
-            height: 6%;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 130px;
+    }
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 160px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 165px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
         background-color: #131311;
         border: 2px solid black; 
         color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 25%;
+        margin-left: -28%;
+        height: 250px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
     }
     .close img{
         position: absolute;
         height: 20px;
         width: 20px;
-        top:3%;
-        left:5%;
+        top:5%;
+        left:3%;
         cursor: pointer;
-    }
-} 
-@media only screen and (width: 540px) and (height: 720px){
-    .header{
-        position: fixed;
-        top: 20%;
-        height: 100%;
-        width: 540px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    .icons{
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        top: -17%;
-        left: calc(100vw - 110px); 
-        z-index: 100;
-        display: block;
-    }
-    #check:checked~.icons #menu-icon{
-        display: none;
-    }
-    .icons #close-icon{
-        display: none;
-    }
-    #check:checked~.icons #close-icon{
-        display: block;
-    }
-    .zakiety__img{
-        position: fixed;
-        top: 4%;
-        left: 3%;
-        width: 180px;
-        transition: all 0.1s ease;
-        z-index: 100;
-    }
-    .space{
-        margin-top: 20%;
-    }
-    .navbar {
-        position: absolute;
-        top: -22%;
-        left: -5%;
-        width: 150%;
-        height:0;
-        background: #131311;
-        overflow: hidden;
-        transition: all 0.3s ease;
-}
-    #check:checked~.navbar{
-        height:110%;
-    }
-    .navbar a {
-        display: flex;
-        font-size: 1.3rem;
-        align-items: center;
-        justify-content: center;
-        margin-right: 31%;
-        margin-top: 2%;
-        opacity: 0;
-        transition: all 0.3s ease;
-    
-    }
-    #check:checked~.navbar a{
-        transform: translateY(0);
-        transition-delay: calc(.15s * var(--i));
-        opacity: 1;
-    }
-    #check:checked~.navbar img{
-        transform: translateY(0);
-        transition-delay: calc(.15s * var(i));
-        opacity: 1;
-    }
-    .navbar img{
-        width: 20px;
-        height: 20px;
-        margin-left: 5%;
-        transform: translateY(-50px);
-        opacity: 0;
-        transition: all 0.3s ease;
-    }
-    .social__links{
-        margin-top: 11%;
-        margin-left: 27%; 
-        margin-right: 52%;
-    
-    }
-    .center{
-        position: absolute;
-        left: 2%;
-        top: 5%;
-        z-index: 200;
-    }
-    .click__zakiety img{
-        position: fixed;
-        top: 3%;
-        left: 2%;
-        width: 250px;
-        transition: all 0.3s ease;
-    }
-    .click__zakiety img:hover{
-        color: #6d6d6d;
-        filter: brightness(0.5);
-    }
-    #click{
-        display: none;
-    }
-    .click__zakiety{
-        cursor: pointer;
-    }
-    
-    .content_modal{
-        position: fixed; 
-        color:#131311;
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        opacity: 0;
-        visibility: hidden;
-        width: 80%;
-        height: 80%;
-        background-color: #fff;
-        border-radius: 5px;
-        z-index: 10; 
-    }
-    #click:checked ~ .content_modal{
-        opacity: 1;
-        visibility: visible;
-    }
-    .header_modal img{
-        position: absolute;
-        top: 55%;
-        left: 25%;
-        color: #131311;
-        height: auto;
-        max-width: 100%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 13%;
-        left: 16%;
-        line-height: 1.5;
-        font-size: 1.8em;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-    }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-    }
-    .header_modal p {
-        position: absolute;
-        font-size: 0.9em;
-        top:30%;
-        left: 39%;
-    }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.9rem;
-            top: 40%;
-            left: 40%;
-            width: 20%;
-            height: 8%;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
-        background-color: #131311;
-        border: 2px solid black; 
-        color:#fff;
-    }
-    .close img{
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        top:3%;
-        left:5%;
-        cursor: pointer;
-    }
-    
-} 
-@media only screen and (width: 280px) and (height: 653px){
-    .header{
-        position: fixed;
-        top: 20%;
-        height: 100%;
-        width: 280px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    .icons{
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        top: -17%;
-        left: calc(100vw - 80px); 
-        z-index: 100;
-        display: block;
-    }
-    #check:checked~.icons #menu-icon{
-        display: none;
-    }
-    .icons #close-icon{
-        display: none;
-    }
-    #check:checked~.icons #close-icon{
-        display: block;
-    }
-    .click__zakiety{
-        position: fixed;
-        top: 4%;
-        left: 3%;
-        width: 120px;
-        transition: all 0.1s ease;
-        z-index: 100;
-    }
-    .space{
-        margin-top: 30%;
-    }
-    .navbar {
-        position: absolute;
-        top: -22%;
-        left: -5%;
-        width: 150%;
-        height:0;
-        background: #131311;
-        overflow: hidden;
-        transition: all 0.3s ease;
-}
-    #check:checked~.navbar{
-        height:110%;
-    }
-    .navbar a {
-        display: flex;
-        font-size: 1rem;
-        align-items: center;
-        justify-content: center;
-        margin-right: 33%;
-        margin-top: 2%;
-        opacity: 0;
-        transition: all 0.3s ease;
-    
-    }
-    #check:checked~.navbar a{
-        transform: translateY(0);
-        transition-delay: calc(.15s * var(--i));
-        opacity: 1;
-    }
-    #check:checked~.navbar img{
-        transform: translateY(0);
-        transition-delay: calc(.15s * var(i));
-        opacity: 1;
-    }
-    img.left{
-        margin-top: 5%;
-        margin-left: 15%;
-    }
-    .navbar img{
-        width: 16px;
-        height: 16px;
-        margin-left: 4.7%;
-        transform: translateY(-50px);
-        opacity: 0;
-        transition: all 0.3s ease;
-    }
-    .social__links{
-        margin-top: 11%;
-        margin-left: 27%; 
-        margin-right: 52%;
-    
-    }
-    .center{
-        position: absolute;
-        left: 2%;
-        top: 5%;
-        z-index: 200;
-    }
-    .click__zakiety img{
-        position: fixed;
-        top: 3%;
-        left: 2%;
-        width: 150px;
-        transition: all 0.3s ease;
-    }
-    .click__zakiety img:hover{
-        color: #6d6d6d;
-        filter: brightness(0.5);
-    }
-    #click{
-        display: none;
-    }
-    .click__zakiety{
-        cursor: pointer;
-    }
-    
-    .content_modal{
-        position: fixed; 
-        color:#131311;
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        opacity: 0;
-        visibility: hidden;
-        width: 80%;
-        height: 70%;
-        background-color: #fff;
-        border-radius: 5px;
-        z-index: 100; 
-    }
-    #click:checked ~ .content_modal{
-        opacity: 1;
-        visibility: visible;
-    }
-    .header_modal img{
-        position: absolute;
-        top: 65%;
-        left: 25%;
-        color: #131311;
-        height: auto;
-        max-width: 100%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 20%;
-        left: 8%;
-        line-height: 1.5;
-        font-size: 1.1em;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-    }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-    }
-    .header_modal p {
-        position: absolute;
-        font-size: 0.7em;
-        top:35%;
-        left: 33%;
-    }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.6em;
-            top: 48%;
-            left: 37%;
-            width: 25%;
-            height: 8%;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
-        background-color: #131311;
-        border: 2px solid black; 
-        color:#fff;
     }
     .close img{
         position: absolute;
@@ -1595,114 +2330,6 @@ body{
     }
 } 
 @media only screen and (min-width: 801px) and (max-width: 820px){
-
-    .navbar a{
-        display: block;
-        font-size: 1rem;
-        margin-top: -5%;
-        margin-bottom: 15%;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 800;
-        transition: all 0.3s ease;
-    }
-    .center{
-        position: absolute;
-        left: 2%;
-        top: 5%;
-        z-index: 200;
-    }
-    .click__zakiety img{
-        position: fixed;
-        top: 3%;
-        left: 2%;
-        width: 250px;
-        transition: all 0.3s ease;
-    }
-    .click__zakiety img:hover{
-        color: #6d6d6d;
-        filter: brightness(0.5);
-    }
-    #click{
-        display: none;
-    }
-    .click__zakiety{
-        cursor: pointer;
-    }
-    
-    .content_modal{
-        position: fixed; 
-        color:#131311;
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        opacity: 0;
-        visibility: hidden;
-        width: 80%;
-        height: 80%;
-        background-color: #fff;
-        border-radius: 5px;
-        z-index: 10; 
-    }
-    #click:checked ~ .content_modal{
-        opacity: 1;
-        visibility: visible;
-    }
-    .header_modal img{
-        position: absolute;
-        top: 55%;
-        left: 25%;
-        color: #131311;
-        height: auto;
-        max-width: 100%;
-        border-radius: 5px;
-    }
-    .header_modal h1{
-        position: absolute;
-        top: 13%;
-        left: 18%;
-        line-height: 1.5;
-        font-size: 2.5em;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-    }
-    .akwarium{
-        margin-left: 7%;
-        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-    }
-    .header_modal p {
-        position: absolute;
-        font-size: 1.2em;
-        top:32%;
-        left: 39%;
-    }
-    .header_modal button  {
-            position: absolute;
-            font-size: 0.9em;
-            top: 40%;
-            left: 39%;
-            width: 20%;
-            height: 6%;
-            background-color: #fff;
-            border: 2px solid black; 
-            border-radius: 5px; 
-            transition: 0.5s ease;
-        }
-    .header_modal button:hover{
-        background-color: #131311;
-        border: 2px solid black; 
-        color:#fff;
-    }
-    .close img{
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        top:3%;
-        left:5%;
-        cursor: pointer;
-    }
-
-}
- @media only screen and (min-width: 821px) and (max-width: 899px){
     .navbar {
         position: fixed; 
         top: 150px; 
@@ -1776,32 +2403,168 @@ body{
     
     .text_block h1{
         position: static;
-        font-size: 1.8em;
-        margin-top: 150px;
+        font-size: 1.2em;
+        margin-top: 120px;
         margin-left: 70px;
     }
-    
     .text_block h2{
         position: static;
-        font-size: 1.5em;
+        font-size: 1em;
         margin-top: 3px; 
-        margin-left: 120px;
+        margin-left: 110px;
     }
     
     .text_block h3 {
         position: static;
-        font-size: 1em;
+        font-size: 0.8em;
         margin-top: 10px; 
-        margin-left: 180px;
+        margin-left: 140px;
     }
     
     .header_modal_text_block button {
         position: static;
         margin-top: 20px; 
-        margin-left: 190px;
-        font-size: 0.9rem;
-        width: 90px;
-        height: 40px;
+        margin-left: 145px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
+        background-color: #131311;
+        border: 2px solid black; 
+        color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: -2%;
+        margin-left: -3%;
+        height: 300px; 
+        width: 400px;
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:5%;
+        left:3%;
+        cursor: pointer;
+    }
+    .social__links{
+        position: sticky;
+        justify-content: center; 
+        align-items: center; 
+        margin-right: 86%;
+        gap: 10%;
+    
+    }
+}
+@media only screen and (min-width: 821px) and (max-width: 899px){
+    .navbar {
+        position: fixed; 
+        top: 150px; 
+        left: 60px; 
+        width: 100%; 
+        z-index: 1000; 
+    }
+    .navbar a{
+        display: block;
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 800;
+        transition: all 0.3s ease;
+    } 
+    .center{
+        position: absolute;
+        left: 2%;
+        top: 5%;
+        z-index: 200;
+    }
+    .click__zakiety img{
+        position: fixed;
+        top: 30px;
+        left: 35px;
+        width: 250px;
+        transition: all 0.3s ease;
+    }
+    .click__zakiety img:hover{
+        color: #6d6d6d;
+        filter: brightness(0.5);
+    }
+    #click{
+        display: none;
+    }
+    .click__zakiety{
+        cursor: pointer;
+    }
+    
+    .content_modal{
+        position: fixed; 
+        color:#131311;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0;
+        visibility: hidden;
+        width: 700px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 5px;
+        z-index: 10;
+        overflow: auto; 
+    }
+    #click:checked ~ .content_modal{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
+        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
+    }
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 120px;
+        margin-left: 70px;
+    }
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 110px;
+    }
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 140px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 145px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
         background-color: #fff;
         border: 2px solid black;
     }
@@ -2538,7 +3301,7 @@ body{
     }
 
 } 
- @media only screen and (min-width: 1919px){
+@media only screen and (min-width: 1919px){
     .navbar a{
         display: block;
         font-size: 1rem;
@@ -2630,6 +3393,9 @@ body{
         background-color: #fff;
         border: 2px solid black;
     }
+    .header_modal img{
+        max-height: 60vh; /* Dostosowanie do 80% wysokości viewportu */   
+    }
     .header_modal_text_block button:hover{
         background-color: #131311;
         border: 2px solid black; 
@@ -2661,5 +3427,4 @@ body{
         gap: 10%;
     
     }
-
 } 
