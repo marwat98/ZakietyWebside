@@ -4,22 +4,14 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;    
 }
-body{
+/* -- Main Window -- */
+.header{
     background-image: url(images/tlo1.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
     background-position: center;
-}
-.header{
-    position: fixed;
-    top: 20%;
-    left: 5%;
-    height: 100%;
-    width: 250px;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 .center{
     position: absolute;
@@ -146,9 +138,59 @@ body{
 #check{
     display: none;
 }
+/* -- About Us -- */
+.about__container, .music__container {
+    background-color: black;
+    color: #fff;
+    padding: 20px; 
+}
 
-/* Mobile screen */
-@media only screen and (min-width: 280px) and (max-width: 285px){
+.about__container h1 {
+    margin-top: -15%;
+    margin-bottom: 20px; 
+    margin-left: 18%;
+}
+
+.about__us__img {
+    display: flex;
+    align-items: center; 
+    padding-top: 10%;
+    margin-left: 15%;
+}
+
+.about__us__img img {
+    width: 500px; 
+    flex-shrink: 0; 
+}
+
+.about__us__text {
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
+    padding-left: 15%; 
+}
+
+.about__us__text h1 {
+    font-size: 4em;
+    margin-bottom: 5%; 
+}
+.about__us__text p {
+    text-align: justify;
+    max-width: 600px;
+}
+.music__container {
+    width: 100%;
+    height: 1200px;
+}
+.music__container h1 {
+    font-size: 4em;
+    padding-top: 15%;
+    padding-left: 40%;
+}
+
+
+/* -- Mobile screen -- */
+@media only screen and (min-width: 0px) and (max-width: 285px){
     .header{
         position: fixed;
         top: 10%;
@@ -204,7 +246,7 @@ body{
         font-size: 1rem;
         align-items: center;
         justify-content: center;
-        margin-right: 31%;
+        margin-right: 28%;
         margin-top: 8%;
         opacity: 0;
         transition: all 0.3s ease;
@@ -272,7 +314,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 100;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -470,7 +512,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 100;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -668,7 +710,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 100;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -866,7 +908,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 100;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -1064,7 +1106,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 100;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -1138,7 +1180,7 @@ body{
         cursor: pointer;
     }
 }
- @media only screen and (min-width: 350px) and (max-width: 360px){
+@media only screen and (min-width: 350px) and (max-width: 360px){
     .header{
         position: fixed;
         top: 20%;
@@ -1257,7 +1299,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -1450,7 +1492,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -1647,7 +1689,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -1844,7 +1886,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -2041,7 +2083,7 @@ body{
         max-height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -2123,7 +2165,205 @@ body{
         cursor: pointer;
     }
 } 
-@media only screen and (min-width: 431px) and (max-width: 800px){
+@media only screen and (min-width: 431px) and (max-width: 540px){
+    .header{
+        position: fixed;
+        top: 20%;
+        height: 100%;
+        width: 900px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .icons{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: -16%;
+        left: calc(100vw - 110px); 
+        z-index: 10000;
+        display: block;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .space{
+        margin-top: 20%;
+    }
+    .navbar {
+        position: absolute;
+        top: -24%;
+        left: -5%;
+        width: 150%;
+        height:0;
+        background: #131311;
+        overflow: hidden;
+        transition: all 0.3s ease;
+}
+    #check:checked~.navbar{
+        height:110%;
+    }
+    .navbar a {
+        display: flex;
+        font-size: 1.2em;
+        align-items: center;
+        justify-content: center;
+        margin-right: 55%;
+        margin-top: -5%;
+        margin-bottom: 8%;
+        opacity: 0;
+        transition: all 0.3s ease;
+    
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(--i));
+        opacity: 1;
+    }
+    #check:checked~.navbar img{
+        transform: translateY(0);
+        transition-delay: calc(.15s * var(i));
+        opacity: 1;
+    }
+    .navbar img{
+        width: 20px;
+        height: 20px;
+        margin-left: 10%;
+        margin-right: -30%;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .social__links{
+        margin-left: 20%; 
+        margin-right: 73%;
+    
+    }
+    .center{
+        position: absolute;
+        left: 2%;
+        top: 5%;
+    }
+    .click__zakiety img{
+        position: fixed;
+        top: 3%;
+        left: 3%;
+        width: 250px;
+        transition: all 0.3s ease;
+        z-index: 10000;
+    }
+    .click__zakiety img:hover{
+        color: #6d6d6d;
+        filter: brightness(0.5);
+    }
+    #click{
+        display: none;
+    }
+    .click__zakiety{
+        cursor: pointer;
+    }
+    
+    .content_modal{
+        position: fixed; 
+        color:#131311;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        opacity: 0;
+        visibility: hidden;
+        width: 400px;
+        max-height: 580px;
+        background-color: #fff;
+        border-radius: 5px;
+        z-index: 10;
+        overflow: auto; 
+    }
+    #click:checked ~ .content_modal{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_modal_text_block {
+        display: flex;
+        flex-direction: column; 
+        font-family: 'moleregular', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        position: relative;
+    }  
+    .text_block h1, .text_block h2, .text_block h3 {
+        white-space: nowrap;
+    }
+    .text_block h1{
+        position: static;
+        font-size: 1.2em;
+        margin-top: 80px;
+        margin-left: 90px;
+    }
+    .text_block h2{
+        position: static;
+        font-size: 1em;
+        margin-top: 3px; 
+        margin-left: 130px;
+    }
+    
+    .text_block h3 {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 10px; 
+        margin-left: 160px;
+    }
+    
+    .header_modal_text_block button {
+        position: static;
+        margin-top: 20px; 
+        margin-left: 165px;
+        font-size: 0.6rem;
+        width: 80px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid black;
+    }
+      
+    .header_modal_text_block button:hover{
+        background-color: #131311;
+        border: 2px solid black; 
+        color:#fff;
+    }
+    .header_modal_image_block img {
+        position: absolute;
+        margin-top: 25%;
+        margin-left: -28%;
+        height: 250px; 
+        color: #131311;
+        border-radius: 5px;
+        object-fit: contain; 
+    }
+    .header_modal img {
+        max-height: 50vh;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:5%;
+        left:3%;
+        cursor: pointer;
+    }
+    .close img{
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top:3%;
+        left:5%;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 541px) and (max-width: 800px){
     .header{
         position: fixed;
         top: 20%;
@@ -2138,7 +2378,7 @@ body{
         height: 200px;
         top: -17%;
         left: calc(100vw - 110px); 
-        z-index: 1000;
+        z-index: 10000;
         display: block;
     }
     #check:checked~.icons #menu-icon{
@@ -2149,14 +2389,6 @@ body{
     }
     #check:checked~.icons #close-icon{
         display: block;
-    }
-    .zakiety__img{
-        position: fixed;
-        top: 4%;
-        left: 3%;
-        width: 180px;
-        transition: all 0.1s ease;
-        z-index: 100;
     }
     .space{
         margin-top: 20%;
@@ -2215,7 +2447,6 @@ body{
         position: absolute;
         left: 2%;
         top: 5%;
-        z-index: 1000;
     }
     .click__zakiety img{
         position: fixed;
@@ -2223,6 +2454,7 @@ body{
         left: 3%;
         width: 250px;
         transition: all 0.3s ease;
+        z-index: 10000;
     }
     .click__zakiety img:hover{
         color: #6d6d6d;
@@ -2247,7 +2479,7 @@ body{
         max-height: 580px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -2383,7 +2615,7 @@ body{
         height: 400px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -2521,7 +2753,7 @@ body{
         height: 400px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -2658,7 +2890,7 @@ body{
         height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -2797,7 +3029,7 @@ body{
         height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -2883,7 +3115,7 @@ body{
     }
 }
 
-/* Monitor screen */
+/* -- Monitor screen -- */
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .navbar {
         position: fixed; 
@@ -2938,7 +3170,7 @@ body{
         height: 500px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -3015,11 +3247,11 @@ body{
         cursor: pointer;
     }
     .social__links{
-        position: sticky;
+        position: fixed;
+        left: 60px;
         justify-content: center; 
         align-items: center; 
-        margin-right: 88%;
-        gap: 10%;
+        gap: 20px;
     
     }
 }
@@ -3077,7 +3309,7 @@ body{
         height: 630px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -3154,11 +3386,11 @@ body{
         cursor: pointer;
     }
     .social__links{
-        position: sticky;
+        position: fixed;
+        left: 60px;
         justify-content: center; 
         align-items: center; 
-        margin-right: 90%;
-        gap: 10%;
+        gap: 20px;
     
     }
 }
@@ -3215,7 +3447,7 @@ body{
         height: 630px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     #click:checked ~ .content_modal{
@@ -3291,21 +3523,29 @@ body{
         left:3%;
         cursor: pointer;
     }
-        .social__links{
-        position: sticky;
+    .social__links{
+        position: fixed;
+        left: 60px;
         justify-content: center; 
         align-items: center; 
-        margin-right: 92%;
-        gap: 10%;
+        gap: 20px;
     
     }
 
 } 
 @media only screen and (min-width: 1919px){
+    .navbar {
+        position: fixed; 
+        top: 150px; 
+        left: 60px; 
+        width: 100%; 
+        z-index: 1000; 
+    }
     .navbar a{
         display: block;
         font-size: 1rem;
-        margin-bottom: 2%;
+        margin-top: 10px;
+        margin-bottom: 20px;
         color: #fff;
         text-decoration: none;
         font-weight: 800;
@@ -3322,9 +3562,9 @@ body{
     }
     .click__zakiety img{
         position: fixed;
-        top: 6%;
-        left: 3%;
-        width: 18%;
+        top: 30px;
+        left: 35px;
+        width: 250px;
         transition: all 0.3s ease;
     }
     .click__zakiety img:hover{
@@ -3353,7 +3593,7 @@ body{
         max-height: 830px;
         background-color: #fff;
         border-radius: 5px;
-        z-index: 10;
+        z-index: 100000;
         overflow: auto; 
     }
     .header_modal_text_block {
@@ -3420,11 +3660,11 @@ body{
         cursor: pointer;
     }
     .social__links{
-        display: flex;
+        position: fixed;
+        left: 60px;
         justify-content: center; 
         align-items: center; 
-        margin-right: 93%;
-        gap: 10%;
+        gap: 20px;
     
     }
 } 
