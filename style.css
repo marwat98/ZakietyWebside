@@ -393,7 +393,7 @@ iframe {
     }
     /* About Us */
     .about__container {
-        background-color: #213E45;
+        background-color: hsl(201, 91%, 4%);
         color: #fff; 
         display: flex;
         flex-direction: column;
@@ -422,9 +422,9 @@ iframe {
         max-width: 200px;
     }
     /* Music */
-    .music__container {
+    .music__container, .music__video__container {
         width: 100%;
-        background-color: #213E45;
+        background-color: hsl(201, 91%, 4%);
     }
     .music__container h1 {
         font-size: 2.5em;
@@ -434,13 +434,24 @@ iframe {
         color: #fff;
 
     }
-    iframe {
+    .emuze {
         width: 280px;
         height: 800px;
-    
-    } 
+    }
+    .music__video__container h1 {
+        font-size: 2.5em;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 9%; 
+        color: #fff;
+
+    }
+    .music_video{
+        width: 280px;
+        height: 300px;
+    }
 } 
-@media only screen and (min-width: 286px) and (max-width: 300px){
+/* @media only screen and (min-width: 286px) and (max-width: 300px){
     .icons{
         position: absolute;
         width: 120px;
@@ -1417,21 +1428,14 @@ iframe {
         cursor: pointer;
     }
 } 
-@media only screen and (min-width: 361px) and (max-width: 380px){
-    .header{
-        position: fixed;
-        top: 20%;
-        height: 100%;
-        width: 768px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
+*/
+@media only screen and (min-width: 360px) and (max-width: 380px){
     .icons{
         position: absolute;
-        width: 200px;
-        height: 200px;
-        top: -17%;
-        left: calc(100vw - 90px); 
+        width: 120px;
+        height: 120px;
+        top: 3%;
+        left: calc(100vw - 70px); 
         z-index: 10000;
         display: block;
     }
@@ -1444,11 +1448,11 @@ iframe {
     #check:checked~.icons #close-icon{
         display: block;
     }
-    .click__zakiety img{
-        position: fixed;
-        top: 4%;
-        left: 3%;
-        width: 150px;
+    .click__zakiety {
+        position: absolute;
+        top: 10px;
+        left: 3vh;
+        width: 120px;
         transition: all 0.1s ease;
         z-index: 10000;
     }
@@ -1457,9 +1461,9 @@ iframe {
     }
     .navbar {
         position: absolute;
-        top: -26%;
-        left: -4%;
-        width: 150%;
+        top: 0;
+        left: 0;
+        width: 60vh;
         height:0;
         background: #131311;
         overflow: hidden;
@@ -1470,15 +1474,12 @@ iframe {
     }
     .navbar a {
         display: flex;
-        font-size: 1.1rem;
+        font-size: 1rem;
         align-items: center;
         justify-content: center;
-        margin-right: 64%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        padding-top: 8%;
         opacity: 0;
         transition: all 0.3s ease;
-    
     }
     #check:checked~.navbar a{
         transform: translateY(0);
@@ -1498,8 +1499,13 @@ iframe {
         transition: all 0.3s ease;
     }
     .social__links{
-        margin-left: 17%;
-        margin-right: 76%;
+        position: absolute;
+        padding-top: 10%;
+        padding-left: 25%;
+    }
+    .social__links a{
+        margin-right: 10px;
+        margin-left: 10px;
     }
     .center{
         position: absolute;
@@ -1609,22 +1615,75 @@ iframe {
         left:8%;
         cursor: pointer;
     }
+      /* About Us */
+      .about__container {
+        background-color: hsl(201, 91%, 4%);
+        color: #fff; 
+        display: flex;
+        flex-direction: column;
+    }
+    .about__us__img {
+        padding-top: 25%;
+        padding-left: 18%;
+    }
+    
+    .about__us__img img {
+        width: 250px; 
+    }
+    .about__us__text h1 {
+        font-size: 2.5em;
+        padding-left: 28%;
+        margin-bottom: 5%; 
+    }
+    .about__us__text p {
+        text-align: justify;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1.5;
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-bottom: 5%;
+        max-width: 300px;
+    }
+    /* Music */
+    .music__container, .music__video__container {
+        width: 100%;
+        background-color: hsl(201, 91%, 4%);
+    }
+    .music__container h1 {
+        font-size: 2.5em;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 23%; 
+        color: #fff;
+
+    }
+    .emuze {
+        padding-left: 10%;
+        width: 300px;
+        height: 800px;
+    }
+    .music__video__container h1 {
+        font-size: 2.5em;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 20%; 
+        color: #fff;
+
+    }
+    .music_video{
+        padding-left: 13%;
+        width: 280px;
+        height: 300px;
+    }
 } 
 @media only screen and (min-width: 381px) and (max-width: 390px){
-    .header{
-        position: fixed;
-        top: 20%;
-        height: 100%;
-        width: 768px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
     .icons{
         position: absolute;
-        width: 200px;
-        height: 200px;
-        top: -17%;
-        left: calc(100vw - 90px); 
+        width: 120px;
+        height: 120px;
+        top: 3%;
+        left: calc(100vw - 70px); 
         z-index: 10000;
         display: block;
     }
@@ -1637,7 +1696,7 @@ iframe {
     #check:checked~.icons #close-icon{
         display: block;
     }
-    .click__zakiety img{
+    .click__zakiety{
         position: fixed;
         top: 4%;
         left: 3%;
@@ -1805,6 +1864,64 @@ iframe {
         top:5%;
         left:8%;
         cursor: pointer;
+    }
+    .about__container {
+        background-color: hsl(201, 91%, 4%);
+        color: #fff; 
+        display: flex;
+        flex-direction: column;
+    }
+    .about__us__img {
+        padding-top: 25%;
+        padding-left: 10%;
+    }
+    
+    .about__us__img img {
+        width: 230px; 
+    }
+    .about__us__text h1 {
+        font-size: 2.5em;
+        padding-left: 10%;
+        margin-bottom: 5%; 
+    }
+    .about__us__text p {
+        text-align: justify;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1.5;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        max-width: 200px;
+    }
+    /* Music */
+    .music__container, .music__video__container {
+        width: 100%;
+        background-color: hsl(201, 91%, 4%);
+    }
+    .music__container h1 {
+        font-size: 2.5em;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 12%; 
+        color: #fff;
+
+    }
+    .emuze {
+        width: 280px;
+        height: 800px;
+    }
+    .music__video__container h1 {
+        font-size: 2.5em;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 9%; 
+        color: #fff;
+
+    }
+    .music_video{
+        width: 280px;
+        height: 300px;
     }
 } 
 @media only screen and (min-width: 391px) and (max-width: 414px){
