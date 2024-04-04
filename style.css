@@ -220,9 +220,9 @@ iframe {
         display: block;
     }
     .click__zakiety{
-        position: sticky;
-        top: 20px;
-        left: 10px;
+        position: absolute;
+        top: 10px;
+        left: 3vh;
         width: 120px;
         transition: all 0.1s ease;
         z-index: 10000;
@@ -232,9 +232,9 @@ iframe {
     }
     .navbar {
         position: absolute;
-        top: -1%;
-        left: -5%;
-        width: 150%;
+        top: 0;
+        left: 0;
+        width: 45vh;
         height:0;
         background: #131311;
         overflow: hidden;
@@ -248,8 +248,7 @@ iframe {
         font-size: 1rem;
         align-items: center;
         justify-content: center;
-        margin-right: 27%;
-        margin-top: 8%;
+        padding-top: 8%;
         opacity: 0;
         transition: all 0.3s ease;
     
@@ -277,10 +276,13 @@ iframe {
         transition: all 0.3s ease;
     }
     .social__links{
-        margin-top: 11%;
-        margin-left: 30%; 
-        margin-right: 50%;
-    
+        position: absolute;
+        padding-top: 10%;
+        padding-left: 26%;
+    }
+    .social__links a{
+        margin-right: 5px;
+        margin-left: 5px;
     }
     .center{
         position: absolute;
