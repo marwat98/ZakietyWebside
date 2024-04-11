@@ -9,7 +9,7 @@
     <link rel = "stylesheet" href="style.css"/>
     <title>Żakiety</title>
 </head>
-<body>
+<body  id="home">
     <header class = "header">
         <div class="center">
             <input type="checkbox" id="click">
@@ -44,11 +44,11 @@
             </label>
             <nav class = "navbar">
                 <div class="space"></div>
-                <a  href = "#" style ="--i:0">Strona główna</a>
-                <a href = "#" style ="--i:1">O nas</a>
-                <a href="#" style ="--i:2">Muzyka</a>
-                <a href = "#" style ="--i:3">Teledyski</a>
-                <a href = "#" style ="--i:4">Kontakt</a>
+                <a  href = "#home" style ="--i:0">Strona główna</a>
+                <a href="#about" style ="--i:1" >O nas</a>
+                <a href="#music" style ="--i:2">Muzyka</a>
+                <a href = "#videos" style ="--i:3">Teledyski</a>
+                <a href = "#contact" style ="--i:4">Kontakt</a>
                 <div class="social__links">
                     <a href = "https://www.facebook.com/zakietyoficjalnie" >
                         <img src="images/fb.png" class="left" alt="facebook"/>
@@ -68,7 +68,7 @@
                 </div>
             </nav>
     </header>
-     <div class="about__container">
+     <div class="about__container" id="about">
         <div class="about">
             <div class="about__us__img">
                 <img src="images/us.png"/>
@@ -86,7 +86,7 @@
                 </div>
         </div>
     </div>
-    <div class="music__container">
+    <div class="music__container" id="music">
         <div class="music">
             <div class="music__text">
                 <h1>♪ muzyka ♪</h1>
@@ -98,7 +98,7 @@
             </div>
         </div>
     </div> 
-    <div class="music__video__container">
+    <div class="music__video__container" id="videos">
         <div class="music__video__block">
             <div class="music__video__text">
                 <h1> ♪ teledyski ♪ </h1>
@@ -116,17 +116,20 @@
             </div>
         </div>
     </div> 
-    <div class="contact__container">
-        <div class="contact">
+    <div class="contact__container" id="contact">
             <div class="contact__header">
                 <h1>SKONTAKTUJ SIĘ Z NAMI</h1>
             </div>
-            <div class="contact__body">
-                <p>MANAGMENT | Rafał Gronowski</p>
-                <p>email | wspolpracazakiety@gmail.com</p>
-                <p>telefon | +48 693645743 </p>
+            <div class="contact">
+                <div class="image__contact">
+                    <img src="images/2.png"/>
+                </div>
+                <div class="contact__body">
+                    <p>MANAGMENT | Rafał Gronowski</p>
+                    <p>email | wspolpracazakiety@gmail.com</p>
+                    <p>telefon | +48 693645743 </p>
+                </div>
             </div>
-        </div>
     </div>
     <div class="created">
         <p>Strona stworzona przez Marcina Watrasa tel: 538 496 663</p>
