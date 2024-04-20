@@ -140,15 +140,13 @@ body{
 
 @media only screen and (min-width: 0px) and (max-width: 300px){
     .icons{
-        position: fixed;
+        position: absolute;
+        width: 50px;
+        height: auto;
         top: 3%;
         left: calc(100vw - 70px); 
         z-index: 10000;
         display: block;
-    }
-    .icons img{
-        width: 50px;
-        height: auto;
     }
     #check:checked~.icons #menu-icon{
         display: none;
@@ -160,13 +158,13 @@ body{
         display: block;
     }
     .space{
-        margin-top: 40%;
+        margin-top: 30%;
     }
     .navbar {
         display: block;
         justify-content: center;
         align-items: center;
-        position: fixed;
+        position: absolute;
         top:0;
         left:0;
         width:100%;
@@ -180,7 +178,7 @@ body{
     }
     .navbar a {
         display: flex;
-        font-size: 1.2em;
+        font-size: 1rem;
         align-items: center;
         justify-content: center;
         padding-top: 5%;
@@ -201,27 +199,20 @@ body{
         opacity: 1;
     }
     .navbar img{
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         transform: translateY(-50px);
         opacity: 0;
         transition: all 0.3s ease;
     }
-    .social__links {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        padding-top: 20%;
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        z-index: 1000; 
+    .social__links{
+        position: absolute;
+        padding-top: 10%;
+        padding-left: 34%;
     }
-    .social__links a {
-        margin: 0 1px; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .social__links a{
+        margin-right: 1px;
+        margin-left: 1px;
     }
     .center{
         position: absolute;
@@ -229,10 +220,10 @@ body{
         top: 5%;
     }
     .click__zakiety img{
-        position: fixed;
-        width: 160px;
+        position: absolute;
+        width: 120px;
         height: auto;
-        margin-top: -20px;
+        margin-top: -8px;
         margin-left: 10px;
         z-index: 10000;
         display: block;
@@ -256,8 +247,8 @@ body{
         transform: translate(-50%, -50%); 
         opacity: 0;
         visibility: hidden;
-        width: 250px;
-        max-height: 450px;
+        width: 200px;
+        max-height: 400px;
         background-color: #fff;
         border-radius: 5px;
         z-index: 100000;
@@ -280,32 +271,32 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.2em;
-        margin-top: 10vh;
+        font-size: 0.9em;
+        margin-top: 30%;
     }
     .text_block h2{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1em;
-        margin-top: 1vh;
+        font-size: 0.7em;
+        margin-top: 3%;
     }
     .text_block h3 {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 0.8em;
+        font-size: 0.6em;
         margin-top: 1vh; 
     } 
     .header_modal_text_block button {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 33%;
-        margin-left: 12%; 
-        font-size: 0.7em;
-        width: 80px;
-        height: 30px;
+        margin-top: 30%;
+        margin-left: 12.5%; 
+        font-size: 0.6em;
+        width: 60px;
+        height: 25px;
         background-color: #fff;
         border: 2px solid black;
     } 
@@ -318,8 +309,8 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 45%;
-        margin-left: -29%;
+        margin-top: 30%;
+        margin-left: -30%;
         height: 150px; 
         color: #131311;
         border-radius: 5px;
@@ -343,7 +334,6 @@ body{
         align-items: center;
         justify-content: center;
     }
-
     .about__us__img {
         display: flex;
         justify-content: center;
@@ -368,7 +358,7 @@ body{
         display: flex;
         justify-content:center;
         padding-bottom: 20%;
-        text-align: center;
+        text-align: justify;
         font-size: 1.1em;
         font-weight: bold;
         line-height: 1.5;
@@ -394,6 +384,9 @@ body{
     }
     .music__text a{
         padding-left: 7%;
+    }
+    .music__text a{
+        padding-left: 11%;
         font-size: 0.7em;
     }
     .music__text h1, .music__text a {
@@ -422,27 +415,43 @@ body{
     .music__video__container h1{
         padding-left: 3%;
         font-size: 1em;
+        padding-top: 3%;
+        padding-bottom: 100%;
     }
-    .music__video__container a{
-        padding-left: 15%;
+    .music__video__container{
+        padding-top: 50%;
+    }
+    .music__video__container h1 {
+        display: inline;
         font-size: 0.9em;
+        font-weight: 200;
+        padding-bottom: 5%;
+        color: #fff;
     }
     .music__video__container h1, .music__video__container a {
         color: #fff; 
         text-decoration: none; 
     }
+    .music__video__container a {
+        display: inline;
+        justify-content: flex-end;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 200;
+        font-size: 0.7em;
+        padding-left: 18%;
+    }
     .music_video{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 2%;
         padding-top: 5%;
         padding-bottom: 100%;
         width: 250px;
         height: 150px;
     }
     .contact{
-        padding-bottom: 65%;
+        padding-bottom: 56%;
         display: block; 
         align-items: center; 
         justify-content: center;
@@ -494,15 +503,19 @@ body{
         justify-content: center;
         color: #fff;
         font-weight: 200;
-        font-size: 1.1em;
+        font-size: 0.7em;
         padding-left: 2%;
-        padding-top: 10%;
+        padding-top: 5%;
+        padding-bottom: 2%;
     }
     .created {
         display: flex;
-        justify-content: center;
+        justify-content: space-between; 
         color: #fff;
-        font-size: 0.7em;
+    }
+    .created p {
+        font-size: 0.5em;
+        white-space: nowrap; 
     }
 }
 @media only screen and (min-width: 301px) and (max-width: 391px){
