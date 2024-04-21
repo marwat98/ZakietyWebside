@@ -139,6 +139,9 @@ body{
 }
 
 @media only screen and (min-width: 0px) and (max-width: 300px){
+    .header{
+        background-image: url(images/tlo2.jpg);
+    }
     .icons{
         position: fixed;
         top: 3%;
@@ -174,7 +177,7 @@ body{
         background: #131311;
         overflow: hidden;
         transition: all 0.3s ease;
-}
+    }
     #check:checked~.navbar{
         height:100%;
     }
@@ -381,11 +384,11 @@ body{
         padding-top: 50%; 
     }
     .music__text h1{
-        font-size: 1em;
-        padding-left: 2%;
+        font-size: 0.9em;
+        padding-left: 3%;
     }
     .music__text a{
-        padding-left: 4%;
+        padding-left: 5%;
         font-size: 0.7em;
     }
     .music__text h1, .music__text a {
@@ -416,8 +419,8 @@ body{
         font-size: 1em;
     }
     .music__video__container a{
-        padding-left: 10%;
-        font-size: 0.7em;
+        padding-left: 6%;
+        font-size: 0.9em;
     }
     .music__video__container h1, .music__video__container a {
         color: #fff; 
@@ -497,6 +500,9 @@ body{
     }
 }
 @media only screen and (min-width: 301px) and (max-width: 391px){
+    .header{
+        background-image: url(images/tlo2.jpg);
+    }
     .icons{
         position: fixed;
         top: 3%;
@@ -590,7 +596,7 @@ body{
         position: fixed;
         width: 160px;
         height: auto;
-        margin-top: -20px;
+        margin-top: -10px;
         margin-left: 10px;
         z-index: 10000;
         display: block;
@@ -701,7 +707,6 @@ body{
         align-items: center;
         justify-content: center;
     }
-
     .about__us__img {
         display: flex;
         justify-content: center;
@@ -864,6 +869,9 @@ body{
     }
 }
 @media only screen and (min-width: 392px) and (max-width: 445px){
+    .header{
+        background-image: url(images/tlo2.jpg);
+    }
     .icons{
         position: fixed;
         top: 3%;
@@ -1229,6 +1237,9 @@ body{
     }
 }
 @media only screen and (min-width: 446px) and (max-width: 599px){
+    .header{
+        background-image: url(images/tlo2.jpg);
+    }
     .icons{
         position: fixed;
         top: 3%;
@@ -1250,7 +1261,7 @@ body{
         display: block;
     }
     .space{
-        margin-top: 40%;
+        margin-top: 20%;
     }
     .navbar {
         display: block;
@@ -1322,7 +1333,7 @@ body{
         position: fixed;
         width: 200px;
         height: auto;
-        margin-top: -30px;
+        margin-top: -10px;
         margin-left: 10px;
         z-index: 10000;
         display: block;
@@ -1594,6 +1605,9 @@ body{
     }
 }  
 @media only screen and (min-width: 600px) and (max-width: 700px){
+    .header{
+        background-image: url(images/tlo2.jpg);
+    }
     .icons{
         position: fixed;
         top: 3%;
@@ -1958,6 +1972,9 @@ body{
     }
 }
 @media only screen and (min-width: 701px) and (max-width: 800px){
+    .header{
+        background-image: url(images/tlo2.jpg);
+    }
     .icons{
         position: fixed;
         top: 3%;
@@ -2324,6 +2341,9 @@ body{
     }
 } 
 @media only screen and (min-width: 801px) and (max-width: 920px){
+    .header{
+        background-image: url(images/tlo2.jpg);
+    }
     .navbar {
         position: fixed; 
         top: 150px; 
@@ -2621,6 +2641,9 @@ body{
     }
 }
 @media only screen and (min-width: 921px) and (max-width: 1279px) {
+    .header{
+        background-image: url(images/tlo2.jpg);
+    }
     .navbar {
         position: fixed; 
         top: 150px; 
@@ -3180,7 +3203,7 @@ body{
     .contact__body p {
         color: #fff;
         font-weight: 200;
-        font-size: 1.7em;
+        font-size: 1.5em;
         display: flex;
         align-items: center;
         justify-content: center;
