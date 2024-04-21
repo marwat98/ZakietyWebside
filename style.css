@@ -174,7 +174,7 @@ body{
         background: #131311;
         overflow: hidden;
         transition: all 0.3s ease;
-}
+    }
     #check:checked~.navbar{
         height:100%;
     }
@@ -381,11 +381,11 @@ body{
         padding-top: 50%; 
     }
     .music__text h1{
-        font-size: 1em;
-        padding-left: 2%;
+        font-size: 0.9em;
+        padding-left: 3%;
     }
     .music__text a{
-        padding-left: 4%;
+        padding-left: 5%;
         font-size: 0.7em;
     }
     .music__text h1, .music__text a {
@@ -416,8 +416,8 @@ body{
         font-size: 1em;
     }
     .music__video__container a{
-        padding-left: 10%;
-        font-size: 0.7em;
+        padding-left: 6%;
+        font-size: 0.9em;
     }
     .music__video__container h1, .music__video__container a {
         color: #fff; 
@@ -701,7 +701,6 @@ body{
         align-items: center;
         justify-content: center;
     }
-
     .about__us__img {
         display: flex;
         justify-content: center;
