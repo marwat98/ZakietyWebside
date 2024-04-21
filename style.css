@@ -381,11 +381,17 @@ body{
         padding-top: 50%; 
     }
     .music__text h1{
-        font-size: 1em;
-        padding-left: 2%;
+        font-size: 0.9em;
+<<<<<<<<< Temporary merge branch 1
     }
     .music__text a{
-        padding-left: 4%;
+        padding-left: 11%;
+=========
+        padding-left: 3%;
+    }
+    .music__text a{
+        padding-left: 7%;
+>>>>>>>>> Temporary merge branch 2
         font-size: 0.7em;
     }
     .music__text h1, .music__text a {
@@ -398,7 +404,11 @@ body{
         justify-content: center;
         width: 250px;
         height: auto;
-        padding-left: 1%;
+<<<<<<<<< Temporary merge branch 1
+        padding-top: 3%;
+        padding-bottom: 100%;
+=========
+        padding-left: 3%;
         padding-top: 3%;
         padding-bottom: 50%;
     }
@@ -414,14 +424,32 @@ body{
     .music__video__container h1{
         padding-left: 3%;
         font-size: 1em;
+>>>>>>>>> Temporary merge branch 2
     }
-    .music__video__container a{
-        padding-left: 10%;
+    .music__video__container{
+        padding-top: 50%;
+    }
+    .music__video__container h1 {
+        display: inline;
+        font-size: 0.9em;
+        font-weight: 200;
+        padding-bottom: 5%;
+        color: #fff;
+    }
+<<<<<<<<< Temporary merge branch 1
+    .music__video__container a {
+        display: inline;
+        justify-content: flex-end;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 200;
         font-size: 0.7em;
-    }
+        padding-left: 18%;
+=========
     .music__video__container h1, .music__video__container a {
         color: #fff; 
         text-decoration: none; 
+>>>>>>>>> Temporary merge branch 2
     }
     .music_video{
         display: flex;
