@@ -138,6 +138,7 @@ body{
     display: none;
 }
 .slider{
+    position: relative;
     width: 400px;
     height: 500px;
     overflow: hidden;
@@ -163,9 +164,9 @@ body{
 .navigation__manual{
     position: absolute;
     width: 420px;
-    margin-top: 25%;
     display: flex;
     justify-content: center;
+    bottom: 2%;
     gap: 10px;
 }
 .manual__btn{
@@ -192,7 +193,7 @@ body{
     display: flex;
     width: 420px;
     justify-content: center;
-    margin-top: 25%;
+    bottom: 2%;
     gap: 10px;
 }
 .navigation__auto div{
@@ -330,6 +331,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -707,6 +709,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -1084,6 +1087,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -1461,6 +1465,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -1838,6 +1843,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -2215,6 +2221,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -2524,6 +2531,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -2833,6 +2841,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -3137,6 +3146,7 @@ body{
         border-radius: 5px;
         z-index: 100000;
         overflow: auto; 
+        transition: opacity 0.5s, visibility 0.5s;
     }
     #click:checked ~ .content_modal{
         opacity: 1;
@@ -3207,7 +3217,7 @@ body{
     
     }
     .about__container {
-        background-color: #213E45;
+        background-color: black;
         color: #fff; 
         display: flex;
         align-items: center;
@@ -3237,7 +3247,7 @@ body{
     .about__us__text p {
         display: flex;
         justify-content:flex-end;
-        text-align: center;
+        text-align: left;
         font-size: 1.3em;
         line-height: 1.5;
         max-width: 600px;
@@ -3587,7 +3597,7 @@ body{
 
     }
     .music__video__container{
-        padding-top: 5%;
+        padding-top: 2%;
     }
     .music__video__text {
         display: flex;
@@ -3618,7 +3628,7 @@ body{
         justify-content: space-between;
         width: 1200px;
         padding-left: 5%;
-        padding-bottom: 20%;
+        padding-bottom: 25%;
     }
     .music_video{
         padding-top: 3%;
@@ -3659,7 +3669,8 @@ body{
         background-color:black;
     }
     .contact {
-        padding-top: 3%;
+        padding-top: 2%;
+        padding-left: 5%;
         display: flex; 
         align-items: center; 
         justify-content: center;
@@ -3671,7 +3682,7 @@ body{
     .contact__body p {
         color: #fff;
         font-weight: 500;
-        font-size: 1.7em;
+        font-size: 2em;
         display: flex;
         align-items: center;
         justify-content: center;
