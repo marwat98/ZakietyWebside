@@ -2100,7 +2100,7 @@ body{
     .icons{
         position: fixed;
         top: 3%;
-        left: calc(100vw - 90px); 
+        left: calc(100vw - 100px); 
         z-index: 10000;
         display: block;
     }
@@ -2132,6 +2132,7 @@ body{
         background: #131311;
         overflow: hidden;
         transition: all 0.3s ease;
+        z-index: 1000;
 }
     #check:checked~.navbar{
         height:100%;
@@ -2143,10 +2144,11 @@ body{
         justify-content: center;
         padding-top: 5%;
         padding-right: 10%;
-        padding-left: 10%;
+        padding-left: 13%;
         transform: translate(-50%, -50%); 
         opacity: 0;
         transition: all 0.3s ease;
+        z-index: 1000;
     }
     #check:checked~.navbar a{
         transform: translateY(0);
@@ -2296,7 +2298,7 @@ body{
         cursor: pointer;
     }
     .about__container {
-        background-color: #213E45;
+        background-color: black;
         color: #fff;
         display: flex;
         align-items: center;
@@ -2307,6 +2309,7 @@ body{
         justify-content: center;
         align-items: center;
         padding-top: 10%;
+        padding-left: 5%;
         flex-shrink: 0; 
     }
     .about__us__img img {
@@ -2318,18 +2321,20 @@ body{
         align-items: center;
         font-size: 4em;
         font-weight: 200;
+        padding-top: 5%;
+        padding-left: 2%;
         padding-bottom: 5%;
         
     }
     .about__us__text p {
         display: flex;
         justify-content:center;
-        padding-left: 1%;
+        padding-left: 3%;
         padding-bottom: 20%;
         text-align: center;
         font-size: 1.5em;
         line-height: 1.5;
-        max-width: 500px;
+        max-width: 600px;
     }
     .music__container, .music__video__container {
         width: 100%;
@@ -2347,13 +2352,13 @@ body{
     }
     .music__text h1{
         font-size: 1.5em;
-        padding-left: 5%;
+        padding-left: 3%;
     }
     .music__text a{
         cursor:pointer;
         transition: trasform 0.3s ease;
-        padding-left: 17%;
-        font-size: 1.2em;
+        padding-left: 27%;
+        font-size: 1.3em;
     }
     .music__text a:hover{
         transform: scale(1.1)
@@ -2366,68 +2371,65 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 450px;
+        width: 550px;
         height: auto;
-        padding-left: 5%;
         padding-top: 3%;
-        padding-bottom: 100%;
+        padding-left: 2%;
+        padding-bottom: 70%;
     }
     .music__video__container{
-        padding-top: 10%;
+        padding-top: 32%;
+        padding-bottom: 20%;
     }
     .music__video__text {
         display: flex;
         align-items: center; 
         white-space: nowrap; 
-        padding-top: 20%; 
+        padding-top: 5%; 
+        padding-left: 5%;
+        width: 100%;
     }
     .music__video__container h1{
-        font-size: 1.5em;
-        padding-left: 8%;
+        font-size: 1.6em;
     }
     .music__video__container a{
-        cursor:pointer;
+        cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 45%;
-        font-size: 1em;
+        padding-left: 35%;
+        font-size: 1.3em;
     }
     .music__video__container a:hover{
-        transform: scale(1.1);
+        transform: scale(1.1); 
     }
     .music__video__container h1, .music__video__container a {
         color: #fff; 
         text-decoration: none; 
     }
-    .music_video{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-left: 3%;
-        padding-top: 5%;
-        padding-bottom: 50%;
+    .music__video__review__container{
         width: 600px;
-        height: 400px;
+        padding-bottom: 25%;
     }
-    .contact{
-        padding-bottom: 37%;
-        display: block; 
-        align-items: center; 
-        justify-content: center;
+    .music_video{
+        padding-top: 3%;
+        width: 610px;
+        height: 340px;
     }
-    .contact__header{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        background-color:#213E45;
+    .music__video__rewview__right{
+        display: flex;
+        justify-content: space-between;
+    }
+    .music_video_down{
+        width: 200px;
+        height: 105px;
     }
     .contact__header h1{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 5%;
-        padding-top: 45px;
-        padding-bottom: 40px;
-        font-size: 2em;
+        padding-top: 10%;
+        padding-left: 8%;
+        padding-bottom: 10%;
+        font-size: 2.7em;
         color:white;
     }
     .contact__container{
@@ -2435,41 +2437,44 @@ body{
         padding: 0;
         width: 100%;
         background-color:black;
-        padding-bottom: 5%;
+        padding-bottom: 7%;
     }
     .created{
         background-color:black;
     }
-    .image__contact{
+    .mobile__center__slider{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .image__contact img {
-        padding-left: 5%;
-        padding-top: 10%;
-        padding-bottom: 5%;
-        width: 600px;
-        height: 350px;
+    .slider{
+        left: 3%;
+    }
+    .contact {
+        padding-top: 2%;
+        display: block; 
+        justify-content: center;
+        align-items: center;
     }
     .contact__body{
         padding-top: 5%;
     }
     .contact__body p {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.7em;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
-        font-weight: 200;
-        font-size: 1.5em;
-        padding-left: 2%;
         padding-top: 5%;
+        padding-left: 5%;
     }
     .created {
         display: flex;
         justify-content: center;
         color: #fff;
-        font-size: 0.7em;
+        font-size: 0.5em;
+        padding-left: 5%;
     }
 } 
 @media only screen and (min-width: 801px) and (max-width: 920px){
@@ -2689,7 +2694,6 @@ body{
     .music__video__container{
         padding-top: 32%;
         padding-bottom: 20%;
-        padding-left: 2%;
     }
     .music__video__text {
         display: flex;
@@ -2721,7 +2725,7 @@ body{
     }
     .music_video{
         padding-top: 3%;
-        width: 710px;
+        width: 700px;
         height: 340px;
     }
     .music__video__rewview__right{
@@ -2729,7 +2733,7 @@ body{
         justify-content: space-between;
     }
     .music_video_down{
-        width: 200px;
+        width: 230px;
         height: 105px;
     }
     .contact__header h1{
