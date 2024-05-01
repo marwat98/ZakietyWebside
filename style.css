@@ -1047,6 +1047,7 @@ body{
         background: #131311;
         overflow: hidden;
         transition: all 0.3s ease;
+        z-index: 1000;
 }
     #check:checked~.navbar{
         height:100%;
