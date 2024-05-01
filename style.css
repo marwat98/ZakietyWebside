@@ -466,7 +466,7 @@ body{
     .music__text a{
         cursor:pointer;
         transition: transform 0.3s ease;
-        padding-left: 1vh;
+        padding-left: 2vh;
         font-size: 0.8em;
     }
     .music__text a:hover{
@@ -502,7 +502,7 @@ body{
     .music__video__container a{
         cursor:pointer;
         transition: transform 0.3s ease;
-        padding-left: 13%;
+        padding-left: 6vh;
         font-size: 0.8em;
     }
     .music__video__container a:hover{
@@ -865,7 +865,7 @@ body{
     .music__text a{
         cursor:pointer;
         transition: transform 0.3s ease;
-        padding-left: 3vh;
+        padding-left: 4vh;
         font-size: 0.8em;
     }
     .music__text a:hover{
@@ -901,7 +901,7 @@ body{
     .music__video__container a{
         cursor:pointer;
         transition: transform 0.3s ease;
-        padding-left: 5vh;
+        padding-left: 6vh;
         font-size: 0.8em;
     }
     .music__video__container a:hover{
@@ -1262,7 +1262,7 @@ body{
     .music__text a{
         cursor:pointer;
         transition: transform 0.3s ease;
-        padding-left: 5vh;
+        padding-left: 6vh;
         font-size: 1em;
     }
     .music__text a:hover{
@@ -1297,7 +1297,7 @@ body{
     .music__video__container a{
         cursor:pointer;
         transition: transform 0.3s ease;
-        padding-left: 6vh;
+        padding-left: 7vh;
         font-size: 1em;
     }
     .music__video__container a:hover{
@@ -1660,7 +1660,7 @@ body{
     .music__text a{
         cursor:pointer;
         transition: transform 0.3s ease;
-        padding-left: 10vh;
+        padding-left: 11vh;
         font-size: 1em;
     }
     .music__text a:hover{
@@ -1698,7 +1698,7 @@ body{
     .music__video__container a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 15vh;
+        padding-left: 16vh;
         font-size: 1em;
     }
     .music__video__container a:hover{
@@ -2065,7 +2065,7 @@ body{
     .music__text a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 16vh;
+        padding-left: 17vh;
         font-size: 1em;
     }
     .music__text a:hover{
@@ -2103,7 +2103,7 @@ body{
     .music__video__container a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 28vh;
+        padding-left: 29vh;
         font-size: 1em;
     }
     .music__video__container a:hover{
@@ -2439,12 +2439,12 @@ body{
     }
     .music__text h1{
         font-size: 1.5em;
-        padding-left: 3%;
+        padding-left: 2vh;
     }
     .music__text a{
         cursor:pointer;
         transition: trasform 0.3s ease;
-        padding-left: 27%;
+        padding-left: 17vh;
         font-size: 1.3em;
     }
     .music__text a:hover{
@@ -2482,7 +2482,7 @@ body{
     .music__video__container a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 35%;
+        padding-left: 22vh;
         font-size: 1.3em;
     }
     .music__video__container a:hover{
@@ -2758,7 +2758,7 @@ body{
     .music__text a{
         cursor:pointer;
         transition: transform 0.3s ease;
-        padding-left: 28%;
+        padding-left: 18vh;
         font-size: 1.3em;
     }
     .music__text a:hover{
@@ -2796,7 +2796,7 @@ body{
     .music__video__container a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 37%;
+        padding-left: 28vh;
         font-size: 1.5em;
     }
     .music__video__container a:hover{
@@ -3073,8 +3073,8 @@ body{
     .music__text a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        font-size: 1.8em;
-        margin-left: 10vh;
+        font-size: 1.5em;
+        margin-left: 18vh;
     }
     .music__text a:hover{
         transform: scale(1.1); 
@@ -3111,8 +3111,8 @@ body{
     .music__video__container a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 35vh;
-        font-size: 1.8em;
+        padding-left: 40vh;
+        font-size: 1.5em;
     }
     .music__video__container a:hover{
         transform: scale(1.1); 
@@ -3331,7 +3331,7 @@ body{
     }
     .about__us__img {
         justify-content:flex-start;
-        padding-top: 12%;
+        padding-top: 8%;
         padding-left: 10%;
         padding-bottom: 23%;
     }
@@ -3341,7 +3341,7 @@ body{
     .about__us__text h1 {
         font-size: 4em;
         font-weight: 200;
-        padding-top: 30%;
+        padding-top: 20%;
         padding-bottom: 3%;
     }
     .about__us__text p {
@@ -3364,17 +3364,16 @@ body{
         display: flex;
         align-items: center; 
         white-space: nowrap; 
-        padding-top: 10%; 
+        padding-top: 5%; 
     }
     .music__text h1{
         font-size: 1.5em;
-        padding-left: 8vh;
+        padding-left: 9vh;
     }
     .music__text a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 1vh;
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     .music__text a:hover{
         transform: scale(1.1); 
@@ -3388,7 +3387,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 600px;
+        width: 550px;
         height: auto;
         padding-left: 10%;
         padding-top: 5%;
@@ -3411,7 +3410,7 @@ body{
     .music__video__container a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 52vh;
+        padding-left: 72vh;
         font-size: 1.5em;
     }
     .music__video__container a:hover{
@@ -3682,14 +3681,14 @@ body{
         padding-top: 10%; 
     }
     .music__text h1{
-        padding-left: 9vh;
+        padding-left: 8vh;
         font-size: 2em;
     }
     .music__text a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 6vh;
-        font-size: 2em;
+        padding-left: 19vh;
+        font-size: 1.5em;
     }
     .music__text a:hover{
         transform: scale(1.1); 
@@ -3727,8 +3726,8 @@ body{
     .music__video__container a{
         cursor: pointer;
         transition: transform 0.3s ease;
-        padding-left: 72vh;
-        font-size: 2em;
+        padding-left: 80vh;
+        font-size: 1.5em;
     }
     .music__video__container a:hover{
         transform: scale(1.1); 
